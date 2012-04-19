@@ -5,6 +5,7 @@ import de.dfki.ccaal.gestures.IGestureRecognitionListener;
 import de.dfki.ccaal.gestures.IGestureRecognitionService;
 import de.dfki.ccaal.gestures.classifier.Distribution;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -31,6 +32,7 @@ public class WaveView extends UiView {
 	private static Context mContext;
 
 	private UiEventListener uiEventListener;
+	private Activity activity;
 	
 	IGestureRecognitionService recognitionService;
 	String activeTrainingSet = "default";
@@ -40,15 +42,23 @@ public class WaveView extends UiView {
 	final IBinder gestureListenerStub = new IGestureRecognitionListener.Stub() {
 
 		//@Override
-		public void onGestureLearned(String gestureName) throws RemoteException {
-			//Toast.makeText(WaveView.this.getContext(), String.format("Gesture %s learned", gestureName), Toast.LENGTH_SHORT).show();
-			System.out.println("Gesture %s learned");
+		public void onGestureLearned(final String gestureName) throws RemoteException {
+			activity.runOnUiThread(new Runnable() {
+			    public void run() {
+			    	Toast.makeText(activity, String.format("Gesture %s learned", gestureName), Toast.LENGTH_SHORT).show();
+			    	System.out.println(String.format("Gesture %s learned", gestureName));
+			    }
+			});
 		}
 
 		//@Override
-		public void onTrainingSetDeleted(String trainingSet) throws RemoteException {
-			Toast.makeText(WaveView.mContext, String.format("Training set %s deleted", trainingSet), Toast.LENGTH_SHORT).show();
-			System.err.println(String.format("Training set %s deleted", trainingSet));
+		public void onTrainingSetDeleted(final String trainingSet) throws RemoteException {
+			activity.runOnUiThread(new Runnable() {
+			    public void run() {
+			    	Toast.makeText(activity, String.format("Training set %s deleted", trainingSet), Toast.LENGTH_SHORT).show();
+			    	System.err.println(String.format("Training set %s deleted", trainingSet));
+			    }
+			});
 		}
 
 		//@Override
@@ -73,9 +83,12 @@ public class WaveView extends UiView {
 				} else {
 					
 				}
-				Toast.makeText((Context) WaveView.this.recognitionService, String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()), Toast.LENGTH_LONG).show();
-				System.out.println(String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()));
-			
+				activity.runOnUiThread(new Runnable() {
+				    public void run() {
+				    	Toast.makeText(activity, String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()), Toast.LENGTH_LONG).show();
+				    	System.out.println(String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()));
+				    }
+				});
 			}
 		}
 	};
@@ -102,13 +115,14 @@ public class WaveView extends UiView {
 
 
 	public WaveView(Context context, final UiEventListener eventListener,
-			boolean drawer, int width, int height) {
+			boolean drawer, int width, int height, Activity act) {
 		super(context, eventListener);
 
 		mContext = context;
 
 		isDrawer = drawer;
 		uiEventListener = eventListener;
+		activity = act;
 
 		LayoutParams params = new LayoutParams(width, height);
 		setLayoutParams(params);

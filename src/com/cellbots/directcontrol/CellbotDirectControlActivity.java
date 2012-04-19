@@ -205,7 +205,7 @@ public class CellbotDirectControlActivity extends Activity implements
 		Display disp = ((WindowManager) getSystemService(Context.WINDOW_SERVICE))
 				.getDefaultDisplay();
 		mUiView = new WaveView(this, this, false, disp.getWidth(),
-				disp.getHeight());
+				disp.getHeight(), this);
 		mControlsLayout.addView(mUiView); 
 	}
 

@@ -447,7 +447,7 @@ public class CellbotRCActivity extends Activity implements UiEventListener {
 		Display disp = ((WindowManager) getSystemService(Context.WINDOW_SERVICE))
 				.getDefaultDisplay();
 		mUiView = new WaveView(this, this, true, disp.getWidth(),
-				disp.getHeight());
+				disp.getHeight(), this);
 		mControlsLayout.addView(mUiView);
 	}
 
