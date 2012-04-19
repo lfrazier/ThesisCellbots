@@ -1,12 +1,6 @@
 package com.cellbots.remote;
 
-import java.io.IOException;
-
-import bdi.upenn.android.BDINetwork;
-
 import com.cellbots.R;
-import com.cellbots.remote.UiView.UiEventListener;
-
 import de.dfki.ccaal.gestures.IGestureRecognitionListener;
 import de.dfki.ccaal.gestures.IGestureRecognitionService;
 import de.dfki.ccaal.gestures.classifier.Distribution;
@@ -15,28 +9,17 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.graphics.Color;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnKeyListener;
-import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SlidingDrawer;
-import android.widget.FrameLayout.LayoutParams;
 import android.widget.SlidingDrawer.OnDrawerCloseListener;
 import android.widget.SlidingDrawer.OnDrawerOpenListener;
 import android.widget.Toast;
@@ -50,7 +33,7 @@ public class WaveView extends UiView {
 	private UiEventListener uiEventListener;
 	
 	IGestureRecognitionService recognitionService;
-	String activeTrainingSet;
+	String activeTrainingSet = "default";
 	double recognitionThreshold;
 	
 
@@ -58,8 +41,8 @@ public class WaveView extends UiView {
 
 		//@Override
 		public void onGestureLearned(String gestureName) throws RemoteException {
-			Toast.makeText(WaveView.mContext, String.format("Gesture %s learned", gestureName), Toast.LENGTH_SHORT).show();
-			System.err.println("Gesture %s learned");
+			//Toast.makeText(WaveView.this.getContext(), String.format("Gesture %s learned", gestureName), Toast.LENGTH_SHORT).show();
+			System.out.println("Gesture %s learned");
 		}
 
 		//@Override
@@ -90,8 +73,9 @@ public class WaveView extends UiView {
 				} else {
 					
 				}
-				Toast.makeText(WaveView.mContext, String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()), Toast.LENGTH_LONG).show();
-				System.err.println(String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()));
+				Toast.makeText((Context) WaveView.this.recognitionService, String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()), Toast.LENGTH_LONG).show();
+				System.out.println(String.format("%s: %f", distribution.getBestMatch(), distribution.getBestDistance()));
+			
 			}
 		}
 	};
@@ -195,7 +179,7 @@ public class WaveView extends UiView {
 				}
 			}
 		});
-		// Git test
+
 		thresholdTextField.setOnKeyListener(new OnKeyListener() {
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
