@@ -4,7 +4,7 @@ ThesisCellbots
 This is the version of [Cellbots](http://code.google.com/p/cellbots/) that I used for my Master's Thesis (Spring 2012). For information on installation and how to use each of the views, see **Instructions** below.
 
 ## Changes from regular Cellbots ##
-The original code was altered to include a fifth view, `WaveView.java`. This view is the gesture command interface.
+The original code was altered to include a fifth view, `WaveView.java`. This view is the gesture command interface and is mostly made up of code from Robert Nesselrath's [GestureTrainer](http://code.google.com/p/android-gesture-recognition-tool/) application.
 
 ## Instructions ##
 #### Installation ####
