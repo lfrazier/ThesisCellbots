@@ -1,0 +1,162 @@
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity}{\section{com.\-cellbots.\-U\-I\-Test\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1_u_i_test_activity}\index{com.\-cellbots.\-U\-I\-Test\-Activity@{com.\-cellbots.\-U\-I\-Test\-Activity}}
+}
+Inheritance diagram for com.\-cellbots.\-U\-I\-Test\-Activity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1_u_i_test_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_u_i_test_activity_a3a8336cdbb2fccb5d5110e3edd642c10}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_u_i_test_activity_a7cd0909b4b93c86d9d20e180ffd4d32a}{on\-Action\-Requested} (int action, String values)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_u_i_test_activity_a625529f4b75b89335ec320937ed9dccb}{on\-Stop\-Requested} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_u_i_test_activity_af57b00c232e50f0be0010f3b0799fa1a}{on\-Wheel\-Velocity\-Set\-Requested} (float direction, float speed)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_u_i_test_activity_a8efb2b9764600a6507ec26c4dab3e858}{on\-Switch\-Interface\-Requested} (int interface\-Id)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_u_i_test_activity_a2ff5c73adfb1f86f31cc065bae92c95b}{on\-Popup\-Window\-Requested} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dump whatever U\-I layouts here to test how they look since many of these layouts will not render correctly/at all in the Android layout tool.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clchen@google.com}{\tt clchen@google.\-com} (Charles L. Chen) 
+
+\href{mailto:keertip@google.com}{\tt keertip@google.\-com} (Keerti Parthasarathy) 
+\end{DoxyAuthor}
+
+
+Definition at line 37 of file U\-I\-Test\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity_a7cd0909b4b93c86d9d20e180ffd4d32a}{\index{com\-::cellbots\-::\-U\-I\-Test\-Activity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}!on\-Action\-Requested@{on\-Action\-Requested}}
+\index{on\-Action\-Requested@{on\-Action\-Requested}!com::cellbots::UITestActivity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}}
+\subsubsection[{on\-Action\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-U\-I\-Test\-Activity.\-on\-Action\-Requested} (
+\begin{DoxyParamCaption}
+\item[{int}]{action, }
+\item[{String}]{values}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_u_i_test_activity_a7cd0909b4b93c86d9d20e180ffd4d32a}
+Causes the robot to take an action as defined by the A\-C\-T\-I\-O\-N\-\_\-\-X\-X\-X values above. Currently the only string value allowed is the text for the A\-C\-T\-I\-O\-N\-\_\-\-S\-P\-E\-A\-K. There are plans in the future to allow for the options to the movement commands. T\-O\-D\-O(css)\-: Change this to the public document U\-R\-L when it is available since this code is intended to be open sourced.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://docs.google.com/a/google.com/document/d/1}{\tt https\-://docs.\-google.\-com/a/google.\-com/document/d/1} Kl11k3\-Y\-O9\-Bsmo\-R\-I\-Y4\-J\-Ej\-Z\-Zo\-Z\-X0\-Bd\-Yy\-\_\-3\-A\-H\-C1\-Gy\-V\-Nu\-Q\-Q/edit\# 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em action} & An A\-C\-T\-I\-O\-N\-\_\-\-X\-X\-X value \\
+\hline
+{\em values} & Value to pass along to the action. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_af7320a4f9037c74ed1f4f912e8d2caac}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 63 of file U\-I\-Test\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity_a3a8336cdbb2fccb5d5110e3edd642c10}{\index{com\-::cellbots\-::\-U\-I\-Test\-Activity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::UITestActivity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-U\-I\-Test\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_u_i_test_activity_a3a8336cdbb2fccb5d5110e3edd642c10}
+Called when the activity is first created. 
+
+Definition at line 45 of file U\-I\-Test\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity_a2ff5c73adfb1f86f31cc065bae92c95b}{\index{com\-::cellbots\-::\-U\-I\-Test\-Activity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}!on\-Popup\-Window\-Requested@{on\-Popup\-Window\-Requested}}
+\index{on\-Popup\-Window\-Requested@{on\-Popup\-Window\-Requested}!com::cellbots::UITestActivity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}}
+\subsubsection[{on\-Popup\-Window\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-U\-I\-Test\-Activity.\-on\-Popup\-Window\-Requested} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_u_i_test_activity_a2ff5c73adfb1f86f31cc065bae92c95b}
+Request to show a popup window 
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a83e7a945fb951b90b2f58fb3807a02bb}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 106 of file U\-I\-Test\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity_a625529f4b75b89335ec320937ed9dccb}{\index{com\-::cellbots\-::\-U\-I\-Test\-Activity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}!on\-Stop\-Requested@{on\-Stop\-Requested}}
+\index{on\-Stop\-Requested@{on\-Stop\-Requested}!com::cellbots::UITestActivity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}}
+\subsubsection[{on\-Stop\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-U\-I\-Test\-Activity.\-on\-Stop\-Requested} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_u_i_test_activity_a625529f4b75b89335ec320937ed9dccb}
+Causes the robot to stop moving. 
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_aa32f78f97e959fe7212b0ce4db2cd616}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 74 of file U\-I\-Test\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity_a8efb2b9764600a6507ec26c4dab3e858}{\index{com\-::cellbots\-::\-U\-I\-Test\-Activity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}!on\-Switch\-Interface\-Requested@{on\-Switch\-Interface\-Requested}}
+\index{on\-Switch\-Interface\-Requested@{on\-Switch\-Interface\-Requested}!com::cellbots::UITestActivity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}}
+\subsubsection[{on\-Switch\-Interface\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-U\-I\-Test\-Activity.\-on\-Switch\-Interface\-Requested} (
+\begin{DoxyParamCaption}
+\item[{int}]{interface\-Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_u_i_test_activity_a8efb2b9764600a6507ec26c4dab3e858}
+Request to switch to a different interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interface\-Id} & The I\-D of the interface to switch to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a5e14db43eb3e72683b42d08bf4222741}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 100 of file U\-I\-Test\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_u_i_test_activity_af57b00c232e50f0be0010f3b0799fa1a}{\index{com\-::cellbots\-::\-U\-I\-Test\-Activity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}!on\-Wheel\-Velocity\-Set\-Requested@{on\-Wheel\-Velocity\-Set\-Requested}}
+\index{on\-Wheel\-Velocity\-Set\-Requested@{on\-Wheel\-Velocity\-Set\-Requested}!com::cellbots::UITestActivity@{com\-::cellbots\-::\-U\-I\-Test\-Activity}}
+\subsubsection[{on\-Wheel\-Velocity\-Set\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-U\-I\-Test\-Activity.\-on\-Wheel\-Velocity\-Set\-Requested} (
+\begin{DoxyParamCaption}
+\item[{float}]{direction, }
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_u_i_test_activity_af57b00c232e50f0be0010f3b0799fa1a}
+Send a wheel velocity command to a robot based on the requested direction and speed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & valid values are -\/180 to +180 where\-: -\/180 to 0 means left 0 to +180 means right \\
+\hline
+{\em speed} & valid values are 0-\/100 which is a percentage of the robots speed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a7912ec147aa882d7c0bf6b8a229ddfd9}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 87 of file U\-I\-Test\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/\hyperlink{_u_i_test_activity_8java}{U\-I\-Test\-Activity.\-java}\end{DoxyCompactItemize}

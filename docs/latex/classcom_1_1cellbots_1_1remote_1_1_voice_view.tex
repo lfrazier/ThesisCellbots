@@ -1,0 +1,118 @@
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_voice_view}{\section{com.\-cellbots.\-remote.\-Voice\-View Class Reference}
+\label{classcom_1_1cellbots_1_1remote_1_1_voice_view}\index{com.\-cellbots.\-remote.\-Voice\-View@{com.\-cellbots.\-remote.\-Voice\-View}}
+}
+Inheritance diagram for com.\-cellbots.\-remote.\-Voice\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1remote_1_1_voice_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1remote_1_1_voice_view_a5a94be91fef4f2cae6acf323701f962c}{Voice\-View} (final Context context, \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener}{Ui\-Event\-Listener} ui\-Event\-Listener, boolean is\-Drawer, int width, int height)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_voice_view_aad770b71e3f372830ea4d6ce5596ce8b}{start\-Listening} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_voice_view_a647c98fc8ce21be766955c7979ea61c3}{stop\-Listening} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_voice_view_aa9d1a004bdd5020a2cffa1717f269138}{on\-Focus\-Changed} (boolean gain\-Focus, int direction, Rect previously\-Focused\-Rect)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_voice_view_aeadc8b0198ec5d9a47a57c73020a0577}{on\-Detached\-From\-Window} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Voice control view for cloud robotics command \& control.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:alanv@google.com}{\tt alanv@google.\-com} (Alan Viverette) 
+\end{DoxyAuthor}
+
+
+Definition at line 49 of file Voice\-View.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_voice_view_a5a94be91fef4f2cae6acf323701f962c}{\index{com\-::cellbots\-::remote\-::\-Voice\-View@{com\-::cellbots\-::remote\-::\-Voice\-View}!Voice\-View@{Voice\-View}}
+\index{Voice\-View@{Voice\-View}!com::cellbots::remote::VoiceView@{com\-::cellbots\-::remote\-::\-Voice\-View}}
+\subsubsection[{Voice\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-remote.\-Voice\-View.\-Voice\-View} (
+\begin{DoxyParamCaption}
+\item[{final Context}]{context, }
+\item[{{\bf Ui\-Event\-Listener}}]{ui\-Event\-Listener, }
+\item[{boolean}]{is\-Drawer, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_voice_view_a5a94be91fef4f2cae6acf323701f962c}
+Constructs a voice controller view using the specified event listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em ui\-Event\-Listener} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Voice\-View.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_voice_view_aeadc8b0198ec5d9a47a57c73020a0577}{\index{com\-::cellbots\-::remote\-::\-Voice\-View@{com\-::cellbots\-::remote\-::\-Voice\-View}!on\-Detached\-From\-Window@{on\-Detached\-From\-Window}}
+\index{on\-Detached\-From\-Window@{on\-Detached\-From\-Window}!com::cellbots::remote::VoiceView@{com\-::cellbots\-::remote\-::\-Voice\-View}}
+\subsubsection[{on\-Detached\-From\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Voice\-View.\-on\-Detached\-From\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_voice_view_aeadc8b0198ec5d9a47a57c73020a0577}
+Shuts down the recognizer. Similar to on\-Destroy(). 
+
+Definition at line 260 of file Voice\-View.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_voice_view_aa9d1a004bdd5020a2cffa1717f269138}{\index{com\-::cellbots\-::remote\-::\-Voice\-View@{com\-::cellbots\-::remote\-::\-Voice\-View}!on\-Focus\-Changed@{on\-Focus\-Changed}}
+\index{on\-Focus\-Changed@{on\-Focus\-Changed}!com::cellbots::remote::VoiceView@{com\-::cellbots\-::remote\-::\-Voice\-View}}
+\subsubsection[{on\-Focus\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Voice\-View.\-on\-Focus\-Changed} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{gain\-Focus, }
+\item[{int}]{direction, }
+\item[{Rect}]{previously\-Focused\-Rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_voice_view_aa9d1a004bdd5020a2cffa1717f269138}
+
+
+Definition at line 245 of file Voice\-View.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_voice_view_aad770b71e3f372830ea4d6ce5596ce8b}{\index{com\-::cellbots\-::remote\-::\-Voice\-View@{com\-::cellbots\-::remote\-::\-Voice\-View}!start\-Listening@{start\-Listening}}
+\index{start\-Listening@{start\-Listening}!com::cellbots::remote::VoiceView@{com\-::cellbots\-::remote\-::\-Voice\-View}}
+\subsubsection[{start\-Listening}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Voice\-View.\-start\-Listening} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_voice_view_aad770b71e3f372830ea4d6ce5596ce8b}
+Starts voice recognition and displays the cancel button. 
+
+Definition at line 391 of file Voice\-View.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_voice_view_a647c98fc8ce21be766955c7979ea61c3}{\index{com\-::cellbots\-::remote\-::\-Voice\-View@{com\-::cellbots\-::remote\-::\-Voice\-View}!stop\-Listening@{stop\-Listening}}
+\index{stop\-Listening@{stop\-Listening}!com::cellbots::remote::VoiceView@{com\-::cellbots\-::remote\-::\-Voice\-View}}
+\subsubsection[{stop\-Listening}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Voice\-View.\-stop\-Listening} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_voice_view_a647c98fc8ce21be766955c7979ea61c3}
+Stops recognition, hides the cancel button, and shows the \char`\"{}not listening\char`\"{} text dialog. 
+
+Definition at line 400 of file Voice\-View.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/remote/\hyperlink{_voice_view_8java}{Voice\-View.\-java}\end{DoxyCompactItemize}

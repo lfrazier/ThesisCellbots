@@ -1,0 +1,155 @@
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller}{\section{com.\-cellbots.\-local.\-Robot\-Bt\-Controller Class Reference}
+\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller}\index{com.\-cellbots.\-local.\-Robot\-Bt\-Controller@{com.\-cellbots.\-local.\-Robot\-Bt\-Controller}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a7e4a884781c4f709ab0f8314c7f073a0}{Robot\-Bt\-Controller} (String robot\-Name, String robot\-Bt\-Name, String robot\-Bt\-Addr)
+\item 
+synchronized void \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a8d02f607706b20be4625c047ec4547b9}{write} (byte\mbox{[}$\,$\mbox{]} cmd)
+\item 
+synchronized void \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a5b6987b9ec1dd3f8877339a00d9b46db}{write} (String cmd)
+\item 
+synchronized byte \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a3cdde7124eb8a6bdcd467441c1796ec0}{read} ()
+\item 
+synchronized int \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_abd242e457a09745a102e53cfe58603eb}{read} (byte\mbox{[}$\,$\mbox{]} data, int offset, int size)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a8607e2e05a174241d53b1b3988c159d2}{disconnect} ()
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_afce315f42c8786555058d7ded3253dcb}{is\-Connected} ()
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a3c68e12e02e7acdbd44f4952831ff3b0}{start\-Connection} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class connects to the robot via Bluetooth and sends allows sending commands to it.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 35 of file Robot\-Bt\-Controller.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a7e4a884781c4f709ab0f8314c7f073a0}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!Robot\-Bt\-Controller@{Robot\-Bt\-Controller}}
+\index{Robot\-Bt\-Controller@{Robot\-Bt\-Controller}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{Robot\-Bt\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-Robot\-Bt\-Controller} (
+\begin{DoxyParamCaption}
+\item[{String}]{robot\-Name, }
+\item[{String}]{robot\-Bt\-Name, }
+\item[{String}]{robot\-Bt\-Addr}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a7e4a884781c4f709ab0f8314c7f073a0}
+Creates an instance of \hyperlink{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller}{Robot\-Bt\-Controller} which can be used to send commands to the robot via Bluetooth.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\-Name} & The name of the robot as its G\-Mail account. \\
+\hline
+{\em robot\-Bt\-Name} & The name of the robot's B\-T device. \\
+\hline
+{\em robot\-Bt\-Addr} & The M\-A\-C address of the robot's B\-T device. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Robot\-Bt\-Controller.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a8607e2e05a174241d53b1b3988c159d2}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-disconnect} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a8607e2e05a174241d53b1b3988c159d2}
+
+
+Definition at line 113 of file Robot\-Bt\-Controller.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_afce315f42c8786555058d7ded3253dcb}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-is\-Connected} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_afce315f42c8786555058d7ded3253dcb}
+
+
+Definition at line 123 of file Robot\-Bt\-Controller.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a3cdde7124eb8a6bdcd467441c1796ec0}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!read@{read}}
+\index{read@{read}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}synchronized byte {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-read} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a3cdde7124eb8a6bdcd467441c1796ec0}
+
+
+Definition at line 95 of file Robot\-Bt\-Controller.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_abd242e457a09745a102e53cfe58603eb}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!read@{read}}
+\index{read@{read}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}synchronized int {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-read} (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{data, }
+\item[{int}]{offset, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_abd242e457a09745a102e53cfe58603eb}
+
+
+Definition at line 104 of file Robot\-Bt\-Controller.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a3c68e12e02e7acdbd44f4952831ff3b0}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!start\-Connection@{start\-Connection}}
+\index{start\-Connection@{start\-Connection}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{start\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-start\-Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a3c68e12e02e7acdbd44f4952831ff3b0}
+Opens a connection with the Bluetooth device specified by $|$m\-Device\-Name$|$. The phone should first be paired with the Bluetooth device. If we have the bluetooth mac address, just use that directly. Otherwise search for a device based on the bluetooth name. 
+
+Definition at line 139 of file Robot\-Bt\-Controller.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a8d02f607706b20be4625c047ec4547b9}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!write@{write}}
+\index{write@{write}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-write} (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{cmd}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a8d02f607706b20be4625c047ec4547b9}
+
+
+Definition at line 71 of file Robot\-Bt\-Controller.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a5b6987b9ec1dd3f8877339a00d9b46db}{\index{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}!write@{write}}
+\index{write@{write}!com::cellbots::local::RobotBtController@{com\-::cellbots\-::local\-::\-Robot\-Bt\-Controller}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void {\bf com.\-cellbots.\-local.\-Robot\-Bt\-Controller.\-write} (
+\begin{DoxyParamCaption}
+\item[{String}]{cmd}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_robot_bt_controller_a5b6987b9ec1dd3f8877339a00d9b46db}
+Appends newline to the specified command string and sends it to the robot via Bluetooth.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file Robot\-Bt\-Controller.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/local/\hyperlink{_robot_bt_controller_8java}{Robot\-Bt\-Controller.\-java}\end{DoxyCompactItemize}

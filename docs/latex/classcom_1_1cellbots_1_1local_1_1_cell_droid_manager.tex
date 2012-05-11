@@ -1,0 +1,170 @@
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager}{\section{com.\-cellbots.\-local.\-Cell\-Droid\-Manager Class Reference}
+\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager}\index{com.\-cellbots.\-local.\-Cell\-Droid\-Manager@{com.\-cellbots.\-local.\-Cell\-Droid\-Manager}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interfacecom_1_1cellbots_1_1local_1_1_cell_droid_manager_1_1_cell_droid_listener}{Cell\-Droid\-Listener}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a3b4ed887e409c833e3c620f38040feae}{Cell\-Droid\-Manager} (Context ct, \hyperlink{interfacecom_1_1cellbots_1_1local_1_1_cell_droid_manager_1_1_cell_droid_listener}{Cell\-Droid\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a627d0f6521e35b965d9cb96630c4c3c0}{connect} (final String agent\-Id, final String username, final String password, final String cmd\-Url, final boolean use\-Local\-Server)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_aa43b2ca4f691db0a1f76461854a0e99c}{disconnect} ()
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a1913d800fc8d3f38b4f8d3711fc41445}{get\-State} ()
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_aa8cd59275f9cb4ad490ca5d1f920014a}{process\-Command} (String message)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_acc723c8ef016ae9d8103872f76227d4a}{stop\-Cell\-Droid\-Service} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a2c8a4fb8413cb7d59fa9dd6955a59da0}{set\-Controller} (String label, String robot\-Bt\-Name, String robot\-Bt\-Addr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_afe54ad556add803e844537b812c7c017}{send\-Direct\-Command} (String cmd)
+\item 
+static String\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a52a8dcdf3782d82ca81fecfb54cad0b9}{get\-Controllers} (Context ct)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helps manage connection to the \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid}{Cell\-Droid} service.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 34 of file Cell\-Droid\-Manager.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a3b4ed887e409c833e3c620f38040feae}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!Cell\-Droid\-Manager@{Cell\-Droid\-Manager}}
+\index{Cell\-Droid\-Manager@{Cell\-Droid\-Manager}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{Cell\-Droid\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-Cell\-Droid\-Manager} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ct, }
+\item[{{\bf Cell\-Droid\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a3b4ed887e409c833e3c620f38040feae}
+
+
+Definition at line 62 of file Cell\-Droid\-Manager.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a627d0f6521e35b965d9cb96630c4c3c0}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!connect@{connect}}
+\index{connect@{connect}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-connect} (
+\begin{DoxyParamCaption}
+\item[{final String}]{agent\-Id, }
+\item[{final String}]{username, }
+\item[{final String}]{password, }
+\item[{final String}]{cmd\-Url, }
+\item[{final boolean}]{use\-Local\-Server}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a627d0f6521e35b965d9cb96630c4c3c0}
+Connects to the service by the specified username and password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_aa43b2ca4f691db0a1f76461854a0e99c}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-disconnect} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_aa43b2ca4f691db0a1f76461854a0e99c}
+
+
+Definition at line 83 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a52a8dcdf3782d82ca81fecfb54cad0b9}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!get\-Controllers@{get\-Controllers}}
+\index{get\-Controllers@{get\-Controllers}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{get\-Controllers}]{\setlength{\rightskip}{0pt plus 5cm}static String \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-get\-Controllers} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a52a8dcdf3782d82ca81fecfb54cad0b9}
+
+
+Definition at line 46 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a1913d800fc8d3f38b4f8d3711fc41445}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!get\-State@{get\-State}}
+\index{get\-State@{get\-State}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{get\-State}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-get\-State} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a1913d800fc8d3f38b4f8d3711fc41445}
+
+
+Definition at line 88 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_aa8cd59275f9cb4ad490ca5d1f920014a}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!process\-Command@{process\-Command}}
+\index{process\-Command@{process\-Command}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{process\-Command}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-process\-Command} (
+\begin{DoxyParamCaption}
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_aa8cd59275f9cb4ad490ca5d1f920014a}
+
+
+Definition at line 94 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_afe54ad556add803e844537b812c7c017}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!send\-Direct\-Command@{send\-Direct\-Command}}
+\index{send\-Direct\-Command@{send\-Direct\-Command}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{send\-Direct\-Command}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-send\-Direct\-Command} (
+\begin{DoxyParamCaption}
+\item[{String}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_afe54ad556add803e844537b812c7c017}
+
+
+Definition at line 42 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a2c8a4fb8413cb7d59fa9dd6955a59da0}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!set\-Controller@{set\-Controller}}
+\index{set\-Controller@{set\-Controller}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{set\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-set\-Controller} (
+\begin{DoxyParamCaption}
+\item[{String}]{label, }
+\item[{String}]{robot\-Bt\-Name, }
+\item[{String}]{robot\-Bt\-Addr}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_a2c8a4fb8413cb7d59fa9dd6955a59da0}
+
+
+Definition at line 108 of file Cell\-Droid\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_acc723c8ef016ae9d8103872f76227d4a}{\index{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}!stop\-Cell\-Droid\-Service@{stop\-Cell\-Droid\-Service}}
+\index{stop\-Cell\-Droid\-Service@{stop\-Cell\-Droid\-Service}!com::cellbots::local::CellDroidManager@{com\-::cellbots\-::local\-::\-Cell\-Droid\-Manager}}
+\subsubsection[{stop\-Cell\-Droid\-Service}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-Cell\-Droid\-Manager.\-stop\-Cell\-Droid\-Service} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1_cell_droid_manager_acc723c8ef016ae9d8103872f76227d4a}
+Stops the \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid}{Cell\-Droid} service. Make sure to call this in your Activity's on\-Destroy(). 
+
+Definition at line 104 of file Cell\-Droid\-Manager.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/local/\hyperlink{_cell_droid_manager_8java}{Cell\-Droid\-Manager.\-java}\end{DoxyCompactItemize}

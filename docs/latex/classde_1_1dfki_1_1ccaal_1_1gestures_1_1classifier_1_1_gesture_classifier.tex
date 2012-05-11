@@ -1,0 +1,218 @@
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier}{\section{de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier Class Reference}
+\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier}\index{de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier@{de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_af327c951d946b665bcdd15d32d43e080}{Gesture\-Classifier} (\hyperlink{interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_i_feature_extractor}{I\-Feature\-Extractor} f\-E, Context context)
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aaa91f7711fdb6e1e8f61d59ec4982f48}{commit\-Data} ()
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a332cbdf1f5c59635561bdb1d3483518c}{train\-Data} (String training\-Set\-Name, \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1_gesture}{Gesture} signal)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a875704ac920de87239f572e829d1e7f4}{load\-Training\-Set} (String training\-Set\-Name)
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a76332c197e6c3c6cc012c6bae4fc20ee}{check\-For\-Label} (String training\-Set\-Name, String label)
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_ac0c4450afdb6352f71514382492ec383}{check\-For\-Training\-Set} (String training\-Set\-Name)
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a831693275e00427ce2ca1b210204ff56}{delete\-Training\-Set} (String training\-Set\-Name)
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aee5e7b400fab5df4558a36dd5c44ec21}{delete\-Label} (String training\-Set\-Name, String label)
+\item 
+List$<$ String $>$ \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a17fde6db6683c5f8c64f7cef5ce5235f}{get\-Labels} (String training\-Set\-Name)
+\item 
+\hyperlink{interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_i_feature_extractor}{I\-Feature\-Extractor} \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a285a498b2668baedd7e4d24b66799cc3}{get\-Feature\-Extractor} ()
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aaa9fcc9ca5c45efb2d637aa87c558528}{set\-Feature\-Extractor} (\hyperlink{interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_i_feature_extractor}{I\-Feature\-Extractor} \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aebcb0670efed8b559e4affcb5f350693}{feature\-Extractor})
+\item 
+\hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_distribution}{Distribution} \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_ad5882f0d7ac6ebadaccea21cfb588fc3}{classify\-Signal} (String training\-Set\-Name, \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1_gesture}{Gesture} signal)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1_gesture}{Gesture} $>$ \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a7d526d1e046e33325660aeed7469322e}{training\-Set} = Collections.\-empty\-List()
+\item 
+\hyperlink{interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_i_feature_extractor}{I\-Feature\-Extractor} \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aebcb0670efed8b559e4affcb5f350693}{feature\-Extractor}
+\item 
+String \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a1aa607ffc0c99977b134334be176806c}{active\-Training\-Set} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 39 of file Gesture\-Classifier.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_af327c951d946b665bcdd15d32d43e080}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!Gesture\-Classifier@{Gesture\-Classifier}}
+\index{Gesture\-Classifier@{Gesture\-Classifier}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{Gesture\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-Gesture\-Classifier} (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Feature\-Extractor}}]{f\-E, }
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_af327c951d946b665bcdd15d32d43e080}
+
+
+Definition at line 46 of file Gesture\-Classifier.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a76332c197e6c3c6cc012c6bae4fc20ee}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!check\-For\-Label@{check\-For\-Label}}
+\index{check\-For\-Label@{check\-For\-Label}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{check\-For\-Label}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-check\-For\-Label} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name, }
+\item[{String}]{label}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a76332c197e6c3c6cc012c6bae4fc20ee}
+
+
+Definition at line 98 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_ac0c4450afdb6352f71514382492ec383}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!check\-For\-Training\-Set@{check\-For\-Training\-Set}}
+\index{check\-For\-Training\-Set@{check\-For\-Training\-Set}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{check\-For\-Training\-Set}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-check\-For\-Training\-Set} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_ac0c4450afdb6352f71514382492ec383}
+
+
+Definition at line 108 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_ad5882f0d7ac6ebadaccea21cfb588fc3}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!classify\-Signal@{classify\-Signal}}
+\index{classify\-Signal@{classify\-Signal}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{classify\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Distribution} {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-classify\-Signal} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name, }
+\item[{{\bf Gesture}}]{signal}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_ad5882f0d7ac6ebadaccea21cfb588fc3}
+
+
+Definition at line 162 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aaa91f7711fdb6e1e8f61d59ec4982f48}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!commit\-Data@{commit\-Data}}
+\index{commit\-Data@{commit\-Data}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{commit\-Data}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-commit\-Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aaa91f7711fdb6e1e8f61d59ec4982f48}
+
+
+Definition at line 52 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aee5e7b400fab5df4558a36dd5c44ec21}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!delete\-Label@{delete\-Label}}
+\index{delete\-Label@{delete\-Label}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{delete\-Label}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-delete\-Label} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name, }
+\item[{String}]{label}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aee5e7b400fab5df4558a36dd5c44ec21}
+
+
+Definition at line 128 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a831693275e00427ce2ca1b210204ff56}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!delete\-Training\-Set@{delete\-Training\-Set}}
+\index{delete\-Training\-Set@{delete\-Training\-Set}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{delete\-Training\-Set}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-delete\-Training\-Set} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a831693275e00427ce2ca1b210204ff56}
+
+
+Definition at line 113 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a285a498b2668baedd7e4d24b66799cc3}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!get\-Feature\-Extractor@{get\-Feature\-Extractor}}
+\index{get\-Feature\-Extractor@{get\-Feature\-Extractor}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{get\-Feature\-Extractor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Feature\-Extractor} {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-get\-Feature\-Extractor} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a285a498b2668baedd7e4d24b66799cc3}
+
+
+Definition at line 154 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a17fde6db6683c5f8c64f7cef5ce5235f}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!get\-Labels@{get\-Labels}}
+\index{get\-Labels@{get\-Labels}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{get\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-get\-Labels} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a17fde6db6683c5f8c64f7cef5ce5235f}
+
+
+Definition at line 142 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a875704ac920de87239f572e829d1e7f4}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!load\-Training\-Set@{load\-Training\-Set}}
+\index{load\-Training\-Set@{load\-Training\-Set}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{load\-Training\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-load\-Training\-Set} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a875704ac920de87239f572e829d1e7f4}
+
+
+Definition at line 77 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aaa9fcc9ca5c45efb2d637aa87c558528}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!set\-Feature\-Extractor@{set\-Feature\-Extractor}}
+\index{set\-Feature\-Extractor@{set\-Feature\-Extractor}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{set\-Feature\-Extractor}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-set\-Feature\-Extractor} (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Feature\-Extractor}}]{feature\-Extractor}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aaa9fcc9ca5c45efb2d637aa87c558528}
+
+
+Definition at line 158 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a332cbdf1f5c59635561bdb1d3483518c}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!train\-Data@{train\-Data}}
+\index{train\-Data@{train\-Data}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{train\-Data}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-train\-Data} (
+\begin{DoxyParamCaption}
+\item[{String}]{training\-Set\-Name, }
+\item[{{\bf Gesture}}]{signal}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a332cbdf1f5c59635561bdb1d3483518c}
+
+
+Definition at line 70 of file Gesture\-Classifier.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a1aa607ffc0c99977b134334be176806c}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!active\-Training\-Set@{active\-Training\-Set}}
+\index{active\-Training\-Set@{active\-Training\-Set}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{active\-Training\-Set}]{\setlength{\rightskip}{0pt plus 5cm}String {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-active\-Training\-Set} = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a1aa607ffc0c99977b134334be176806c}
+
+
+Definition at line 43 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aebcb0670efed8b559e4affcb5f350693}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!feature\-Extractor@{feature\-Extractor}}
+\index{feature\-Extractor@{feature\-Extractor}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{feature\-Extractor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Feature\-Extractor} {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-feature\-Extractor}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_aebcb0670efed8b559e4affcb5f350693}
+
+
+Definition at line 42 of file Gesture\-Classifier.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a7d526d1e046e33325660aeed7469322e}{\index{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}!training\-Set@{training\-Set}}
+\index{training\-Set@{training\-Set}!de::dfki::ccaal::gestures::classifier::GestureClassifier@{de\-::dfki\-::ccaal\-::gestures\-::classifier\-::\-Gesture\-Classifier}}
+\subsubsection[{training\-Set}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Gesture}$>$ {\bf de.\-dfki.\-ccaal.\-gestures.\-classifier.\-Gesture\-Classifier.\-training\-Set} = Collections.\-empty\-List()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier_a7d526d1e046e33325660aeed7469322e}
+
+
+Definition at line 41 of file Gesture\-Classifier.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/de/dfki/ccaal/gestures/classifier/\hyperlink{_gesture_classifier_8java}{Gesture\-Classifier.\-java}\end{DoxyCompactItemize}

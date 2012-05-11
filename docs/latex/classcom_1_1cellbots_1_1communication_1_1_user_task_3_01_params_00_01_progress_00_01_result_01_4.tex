@@ -1,0 +1,431 @@
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4}{\section{com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$ Class Reference}
+\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4}\index{com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$@{com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Internal\-Handler}
+\item 
+enum \hyperlink{enumcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_1_1_status}{Status}
+\item 
+class {\bfseries User\-Task\-Result$<$ Data $>$}
+\item 
+class {\bfseries Worker\-Runnable$<$ Params, Result $>$}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ad6e99e8d228daef6a7ece12157939b0d}{User\-Task} ()
+\item 
+final Status \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ac4ce48eea3fce0d3b19d4eddc6ebf0b7}{get\-Status} ()
+\item 
+abstract Result \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a86139461a6fc31539ed614e1d0ba221b}{do\-In\-Background} (Params...\-params)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a607ca1af80fbed865758fc2d65251484}{on\-Pre\-Execute} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a78c489752f4b23d6ab9973cea78ae0e4}{on\-Post\-Execute} (Result result)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7ee2ad0a6e1ec5fc6ba1f34897888a95}{on\-Progress\-Update} (Progress...\-values)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2a8c552d0235bef67c82476ffc8f40db}{on\-Cancelled} ()
+\item 
+final boolean \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7aaef3fd3b63b168ac9d7c84bb784e31}{is\-Cancelled} ()
+\item 
+final boolean \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7b9b699b449873617e122bb9a526b4f3}{cancel} (boolean may\-Interrupt\-If\-Running)
+\item 
+final Result \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a18d4242688edcbf73d6dcf8333049062}{get} ()  throws Interrupted\-Exception, Execution\-Exception 
+\item 
+final Result \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_aec21bec2122788a4f70666151ea380ef}{get} (long timeout, Time\-Unit unit)  throws Interrupted\-Exception, Execution\-Exception, Timeout\-Exception 
+\item 
+final \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ad6e99e8d228daef6a7ece12157939b0d}{User\-Task}$<$ Params, \\*
+Progress, Result $>$ \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2e44ceca4eef87a256b191047e362862}{execute} (Params...\-params)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_aac6548bd9089aa6c6c77056074310104}{publish\-Progress} (Progress...\-values)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User\-Task enables proper and easy use of the U\-I thread. This class allows to perform background operations and publish results on the U\-I thread without having to manipulate threads and/or handlers. 
+
+A user task is defined by a computation that runs on a background thread and whose result is published on the U\-I thread. A user task is defined by 3 generic types, called {\ttfamily Params}, {\ttfamily Progress} and {\ttfamily  Result}, and 4 steps, called {\ttfamily begin}, {\ttfamily do\-In\-Background }, {\ttfamily process\-Progress{\ttfamily and {\ttfamily end}. }}
+
+{\ttfamily {\ttfamily  \subsubsection*{Usage}}}
+
+{\ttfamily {\ttfamily  }}
+
+{\ttfamily {\ttfamily  User\-Task must be subclassed to be used. The subclass will override at least one method (\hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})}), and most often will override a second one (\hyperlink{}{on\-Post\-Execute(\-Object)}.) }}
+
+{\ttfamily {\ttfamily  }}
+
+{\ttfamily {\ttfamily  Here is an example of subclassing\-: }}
+
+{\ttfamily {\ttfamily }}
+
+{\ttfamily {\ttfamily 
+\begin{DoxyPre}
+ private class DownloadFilesTask extends UserTask<URL, Integer, Long> \{ * public File doInBackground(URL... urls) \{ * int count = urls.length; * long totalSize = 0; * for (int i = 0; i < count; i++) \{ * totalSize += Downloader.downloadFile(urls[i]); * publishProgress((int) ((i / (float) count) * 100)); * \} * \} * * public void onProgressUpdate(Integer... progress) \{ * setProgressPercent(progress[0]); * \} * * public void onPostExecute(Long result) \{ * showDialog("Downloaded " + result + " bytes"); * \} * \} *
+ \end{DoxyPre}
+ }}
+
+{\ttfamily {\ttfamily  Once created, a task is executed very simply\-: }}
+
+{\ttfamily {\ttfamily }}
+
+{\ttfamily {\ttfamily 
+\begin{DoxyPre}
+ new DownloadFilesTask().execute(new URL[] \{ ... \}); *
+ \end{DoxyPre}
+}}
+
+{\ttfamily {\ttfamily \subsubsection*{User task's generic types}}}
+
+{\ttfamily {\ttfamily  }}
+
+{\ttfamily {\ttfamily  The three types used by a user task are the following\-: }}
+
+{\ttfamily {\ttfamily  
+\begin{DoxyEnumerate}
+\item {\ttfamily Params}, the type of the parameters sent to the task upon execution. 
+\item {\ttfamily Progress}, the type of the progress units published during the background computation. 
+\item {\ttfamily Result}, the type of the result of the background computation. 
+\end{DoxyEnumerate}}}
+
+{\ttfamily {\ttfamily  Not all types are always used by a user task. To mark a type as unused, simply use the type \hyperlink{}{Void}\-: }}
+
+{\ttfamily {\ttfamily }}
+
+{\ttfamily {\ttfamily 
+\begin{DoxyPre}
+ private class MyTask extends UserTask<Void, Void, Void) \{ ... \} *
+ \end{DoxyPre}
+}}
+
+{\ttfamily {\ttfamily \subsubsection*{The 4 steps}}}
+
+{\ttfamily {\ttfamily  }}
+
+{\ttfamily {\ttfamily  When a user task is executed, the task goes through 4 steps\-: }}
+
+{\ttfamily {\ttfamily  
+\begin{DoxyEnumerate}
+\item \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a607ca1af80fbed865758fc2d65251484}{on\-Pre\-Execute()}, invoked on the U\-I thread immediately after the task is executed. This step is normally used to setup the task, for instance by showing a progress bar in the user interface. 
+\item \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})}, invoked on the background thread immediately after \hyperlink{}{on\-Pre\-Execute ()} finishes executing. This step is used to perform background computation that can take a long time. The parameters of the user task are passed to this step. The result of the computation must be returned by this step and will be passed back to the last step. This step can also use \hyperlink{}{publish\-Progress(\-Object\mbox{[}$\,$\mbox{]})} to publish one or more units of progress. These values are published on the U\-I thread, in the \hyperlink{}{on\-Progress\-Update(\-Object\mbox{[}$\,$\mbox{]})} step. 
+\item \hyperlink{}{on\-Progress\-Update (Object\mbox{[}\mbox{]})}, invoked on the U\-I thread after a call to \hyperlink{}{publish\-Progress(\-Object\mbox{[}$\,$\mbox{]})}. The timing of the execution is undefined. This method is used to display any form of progress in the user interface while the background computation is still executing. For instance, it can be used to animate a progress bar or show logs in a text field. 
+\item \hyperlink{}{on\-Post\-Execute (Object)}, invoked on the U\-I thread after the background computation finishes. The result of the background computation is passed to this step as a parameter. 
+\end{DoxyEnumerate}\subsubsection*{Threading rules}}}
+
+{\ttfamily {\ttfamily  }}
+
+{\ttfamily {\ttfamily  There are a few threading rules that must be followed for this class to work properly\-: }}
+
+{\ttfamily {\ttfamily  
+\begin{DoxyItemize}
+\item The task instance must be created on the U\-I thread. 
+\item \hyperlink{}{execute(\-Object\mbox{[}$\,$\mbox{]})} must be invoked on the U\-I thread. 
+\item Do not call \hyperlink{}{on\-Pre\-Execute ()}, \hyperlink{}{on\-Post\-Execute (Object)}, \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})}, \hyperlink{}{on\-Progress\-Update (Object\mbox{[}\mbox{]})} manually. 
+\item The task can be executed only once (an exception will be thrown if a second execution is attempted.) 
+\end{DoxyItemize}}}
+
+Definition at line 132 of file User\-Task.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ad6e99e8d228daef6a7ece12157939b0d}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!User\-Task@{User\-Task}}
+\index{User\-Task@{User\-Task}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{User\-Task}]{\setlength{\rightskip}{0pt plus 5cm}com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf User\-Task} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ad6e99e8d228daef6a7ece12157939b0d}
+Creates a new user task. This constructor must be invoked on the U\-I thread. 
+
+Definition at line 193 of file User\-Task.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7b9b699b449873617e122bb9a526b4f3}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!cancel@{cancel}}
+\index{cancel@{cancel}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}final boolean com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf cancel} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{may\-Interrupt\-If\-Running}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7b9b699b449873617e122bb9a526b4f3}
+Attempts to cancel execution of this task. This attempt will fail if the task has already completed, already been cancelled, or could not be cancelled for some other reason. If successful, and this task has not started when {\ttfamily cancel} is called, this task should never run. If the task has already started, then the {\ttfamily may\-Interrupt\-If\-Running} parameter determines whether the thread executing this task should be interrupted in an attempt to stop the task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em may\-Interrupt\-If\-Running} & {\ttfamily true} if the thread executing this task should be interrupted; otherwise, in-\/progress tasks are allowed to complete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily false} if the task could not be cancelled, typically because it has already completed normally; {\ttfamily true} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7aaef3fd3b63b168ac9d7c84bb784e31}{is\-Cancelled()} 
+
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2a8c552d0235bef67c82476ffc8f40db}{on\-Cancelled()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 337 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a86139461a6fc31539ed614e1d0ba221b}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!do\-In\-Background@{do\-In\-Background}}
+\index{do\-In\-Background@{do\-In\-Background}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{do\-In\-Background}]{\setlength{\rightskip}{0pt plus 5cm}abstract Result com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf do\-In\-Background} (
+\begin{DoxyParamCaption}
+\item[{Params...}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a86139461a6fc31539ed614e1d0ba221b}
+Override this method to perform a computation on a background thread. The specified parameters are the parameters passed to \hyperlink{}{execute(\-Object\mbox{[}$\,$\mbox{]})} by the caller of this task. This method can call \hyperlink{}{publish\-Progress(\-Object\mbox{[}$\,$\mbox{]})} to publish updates on the U\-I thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & The parameters of the task. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A result, defined by the subclass of this task. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a607ca1af80fbed865758fc2d65251484}{on\-Pre\-Execute()} 
+
+\#on\-Post\-Execute(\-Object) 
+
+\#publish\-Progress(\-Object\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2e44ceca4eef87a256b191047e362862}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!execute@{execute}}
+\index{execute@{execute}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf User\-Task}$<$Params, Progress, Result$>$ com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf execute} (
+\begin{DoxyParamCaption}
+\item[{Params...}]{params}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2e44ceca4eef87a256b191047e362862}
+Executes the task with the specified parameters. The task returns itself (this) so that the caller can keep a reference to it. This method must be invoked on the U\-I thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & The parameters of the task. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This instance of User\-Task. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-State\-Exception} & If \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ac4ce48eea3fce0d3b19d4eddc6ebf0b7}{get\-Status()} returns either \hyperlink{}{User\-Task.\-Status\#\-R\-U\-N\-N\-I\-N\-G} or \hyperlink{}{User\-Task.\-Status\#\-F\-I\-N\-I\-S\-H\-E\-D}. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 393 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a18d4242688edcbf73d6dcf8333049062}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!get@{get}}
+\index{get@{get}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}final Result com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf get} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Interrupted\-Exception, Execution\-Exception }}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a18d4242688edcbf73d6dcf8333049062}
+Waits if necessary for the computation to complete, and then retrieves its result.
+
+\begin{DoxyReturn}{Returns}
+The computed result. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Cancellation\-Exception} & If the computation was cancelled. \\
+\hline
+{\em Execution\-Exception} & If the computation threw an exception. \\
+\hline
+{\em Interrupted\-Exception} & If the current thread was interrupted while waiting. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 353 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_aec21bec2122788a4f70666151ea380ef}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!get@{get}}
+\index{get@{get}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}final Result com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf get} (
+\begin{DoxyParamCaption}
+\item[{long}]{timeout, }
+\item[{Time\-Unit}]{unit}
+\end{DoxyParamCaption}
+)  throws Interrupted\-Exception, Execution\-Exception, Timeout\-Exception }}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_aec21bec2122788a4f70666151ea380ef}
+Waits if necessary for at most the given time for the computation to complete, and then retrieves its result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & Time to wait before cancelling the operation. \\
+\hline
+{\em unit} & The time unit for the timeout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed result. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Cancellation\-Exception} & If the computation was cancelled. \\
+\hline
+{\em Execution\-Exception} & If the computation threw an exception. \\
+\hline
+{\em Interrupted\-Exception} & If the current thread was interrupted while waiting. \\
+\hline
+{\em Timeout\-Exception} & If the wait timed out. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 375 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ac4ce48eea3fce0d3b19d4eddc6ebf0b7}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!get\-Status@{get\-Status}}
+\index{get\-Status@{get\-Status}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{get\-Status}]{\setlength{\rightskip}{0pt plus 5cm}final Status com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf get\-Status} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_ac4ce48eea3fce0d3b19d4eddc6ebf0b7}
+Returns the current status of this task.
+
+\begin{DoxyReturn}{Returns}
+The current status. 
+\end{DoxyReturn}
+
+
+Definition at line 239 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7aaef3fd3b63b168ac9d7c84bb784e31}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!is\-Cancelled@{is\-Cancelled}}
+\index{is\-Cancelled@{is\-Cancelled}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{is\-Cancelled}]{\setlength{\rightskip}{0pt plus 5cm}final boolean com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf is\-Cancelled} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7aaef3fd3b63b168ac9d7c84bb784e31}
+Returns {\ttfamily true} if this task was cancelled before it completed normally.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if task was cancelled before it completed 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7b9b699b449873617e122bb9a526b4f3}{cancel(boolean)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 314 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2a8c552d0235bef67c82476ffc8f40db}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!on\-Cancelled@{on\-Cancelled}}
+\index{on\-Cancelled@{on\-Cancelled}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{on\-Cancelled}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf on\-Cancelled} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a2a8c552d0235bef67c82476ffc8f40db}
+Runs on the U\-I thread after \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7b9b699b449873617e122bb9a526b4f3}{cancel(boolean)} is invoked.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7b9b699b449873617e122bb9a526b4f3}{cancel(boolean)} 
+
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7aaef3fd3b63b168ac9d7c84bb784e31}{is\-Cancelled()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 304 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a78c489752f4b23d6ab9973cea78ae0e4}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!on\-Post\-Execute@{on\-Post\-Execute}}
+\index{on\-Post\-Execute@{on\-Post\-Execute}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{on\-Post\-Execute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf on\-Post\-Execute} (
+\begin{DoxyParamCaption}
+\item[{Result}]{result}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a78c489752f4b23d6ab9973cea78ae0e4}
+Runs on the U\-I thread after \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})}. The specified result is the value returned by \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})} or null if the task was cancelled or an exception occured.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of the operation computed by \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a607ca1af80fbed865758fc2d65251484}{on\-Pre\-Execute()} 
+
+\#do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Definition at line 281 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a607ca1af80fbed865758fc2d65251484}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!on\-Pre\-Execute@{on\-Pre\-Execute}}
+\index{on\-Pre\-Execute@{on\-Pre\-Execute}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{on\-Pre\-Execute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf on\-Pre\-Execute} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a607ca1af80fbed865758fc2d65251484}
+Runs on the U\-I thread before \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})}.
+
+\begin{DoxySeeAlso}{See also}
+\#on\-Post\-Execute(\-Object) 
+
+\#do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Definition at line 265 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7ee2ad0a6e1ec5fc6ba1f34897888a95}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!on\-Progress\-Update@{on\-Progress\-Update}}
+\index{on\-Progress\-Update@{on\-Progress\-Update}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{on\-Progress\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf on\-Progress\-Update} (
+\begin{DoxyParamCaption}
+\item[{Progress...}]{values}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7ee2ad0a6e1ec5fc6ba1f34897888a95}
+Runs on the U\-I thread after \hyperlink{}{publish\-Progress(\-Object\mbox{[}$\,$\mbox{]})} is invoked. The specified values are the values passed to \hyperlink{}{publish\-Progress(\-Object\mbox{[}$\,$\mbox{]})}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & The values indicating progress. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\#publish\-Progress(\-Object\mbox{[}$\,$\mbox{]}) 
+
+\#do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Definition at line 295 of file User\-Task.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_aac6548bd9089aa6c6c77056074310104}{\index{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}!publish\-Progress@{publish\-Progress}}
+\index{publish\-Progress@{publish\-Progress}!com::cellbots::communication::UserTask< Params, Progress, Result >@{com\-::cellbots\-::communication\-::\-User\-Task$<$ Params, Progress, Result $>$}}
+\subsubsection[{publish\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}final void com.\-cellbots.\-communication.\-User\-Task$<$ Params, Progress, Result $>$.{\bf publish\-Progress} (
+\begin{DoxyParamCaption}
+\item[{Progress...}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_aac6548bd9089aa6c6c77056074310104}
+This method can be invoked from \hyperlink{}{do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]})} to publish updates on the U\-I thread while the background computation is still running. Each call to this method will trigger the execution of \hyperlink{}{on\-Progress\-Update(\-Object\mbox{[}$\,$\mbox{]})} on the U\-I thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & The progress values to update the U\-I with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\# \hyperlink{classcom_1_1cellbots_1_1communication_1_1_user_task_3_01_params_00_01_progress_00_01_result_01_4_a7ee2ad0a6e1ec5fc6ba1f34897888a95}{on\-Progress\-Update} (Object\mbox{[}\mbox{]}) 
+
+\#do\-In\-Background(\-Object\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Definition at line 427 of file User\-Task.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/communication/\hyperlink{_user_task_8java}{User\-Task.\-java}\end{DoxyCompactItemize}

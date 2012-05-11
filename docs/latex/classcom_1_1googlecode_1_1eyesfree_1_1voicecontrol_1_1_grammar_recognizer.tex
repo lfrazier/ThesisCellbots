@@ -1,0 +1,257 @@
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer}{\section{com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer Class Reference}
+\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer}\index{com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer@{com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Grammar\-Entry}
+\item 
+interface {\bfseries Grammar\-Listener}
+\item 
+class {\bfseries Grammar\-Map}
+\item 
+class {\bfseries Grammar\-Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a335c7243c8a188f63506398a72da9780}{Grammar\-Recognizer} (Context context)
+\item 
+boolean \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a1fd47a5511fa2b7c51eb1b76735a6a62}{stop} ()
+\item 
+boolean \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a6f4b750113a3d134d5f158b497442bdb}{is\-Listening} ()
+\item 
+void \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ac5492e0db70e3a156d4d250c848379c0}{shutdown} ()
+\item 
+boolean \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ad5da5df6c78f8df6a143302321390e90}{load\-Grammar} (int res\-Id)
+\item 
+boolean \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a17ff647f279370b758a44ac4f0ab9236}{load\-Grammar} (File grammar)
+\item 
+boolean \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a56af40935d33b65924d61bc4078647b6}{load\-Slots} (Grammar\-Map map)
+\item 
+void \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ac2c2dc188ed0f5a3f0a43e52b28e0fc6}{set\-Listener} (Grammar\-Listener listener)
+\item 
+void \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a8592712e3b3203a0d6dda85ef5a9ec8b}{recognize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a2725b39cfa9b27f08885011fac773584}{S\-U\-C\-C\-E\-S\-S} = 0
+\item 
+static final int \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a5e17fa7461528dfc7eb4360c07360b80}{E\-R\-R\-O\-R} = -\/1
+\item 
+static final String \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_adb985941250757b2c8cdc4ac5713a4e9}{K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E} = Recognizer.\-K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E
+\item 
+static final String \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_aa0198125888a9433fb8900ca98dbd0b3}{K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L} = Recognizer.\-K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L
+\item 
+static final String \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a328c5d1b90c9f0c0368414ec6c046039}{K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G} = Recognizer.\-K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Voice command recognition class. Takes a list of input commands and returns recognized commands.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:alanv@google.com}{\tt alanv@google.\-com} (Alan Viverette) 
+\end{DoxyAuthor}
+
+
+Definition at line 45 of file Grammar\-Recognizer.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a335c7243c8a188f63506398a72da9780}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!Grammar\-Recognizer@{Grammar\-Recognizer}}
+\index{Grammar\-Recognizer@{Grammar\-Recognizer}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{Grammar\-Recognizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-Grammar\-Recognizer} (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a335c7243c8a188f63506398a72da9780}
+Creates a new \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer}{Grammar\-Recognizer} for the given Context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context that will own this object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file Grammar\-Recognizer.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a6f4b750113a3d134d5f158b497442bdb}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!is\-Listening@{is\-Listening}}
+\index{is\-Listening@{is\-Listening}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{is\-Listening}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-is\-Listening} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a6f4b750113a3d134d5f158b497442bdb}
+
+
+Definition at line 119 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ad5da5df6c78f8df6a143302321390e90}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!load\-Grammar@{load\-Grammar}}
+\index{load\-Grammar@{load\-Grammar}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{load\-Grammar}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-load\-Grammar} (
+\begin{DoxyParamCaption}
+\item[{int}]{res\-Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ad5da5df6c78f8df6a143302321390e90}
+Loads a compiled grammar from a resource I\-D.
+
+
+\begin{DoxyParams}{Parameters}
+{\em res\-Id} & The resource I\-D of the G2\-G-\/formatted grammar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a17ff647f279370b758a44ac4f0ab9236}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!load\-Grammar@{load\-Grammar}}
+\index{load\-Grammar@{load\-Grammar}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{load\-Grammar}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-load\-Grammar} (
+\begin{DoxyParamCaption}
+\item[{File}]{grammar}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a17ff647f279370b758a44ac4f0ab9236}
+Loads a compiled grammar from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grammar} & A file representing the compiled G2\-G-\/formatted grammar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a56af40935d33b65924d61bc4078647b6}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!load\-Slots@{load\-Slots}}
+\index{load\-Slots@{load\-Slots}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{load\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-load\-Slots} (
+\begin{DoxyParamCaption}
+\item[{Grammar\-Map}]{map}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a56af40935d33b65924d61bc4078647b6}
+Loads the available slots in a grammar using the entries in the supplied Grammar\-Map. You must load a grammar before calling this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & A populated Grammar\-Map object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success 
+\end{DoxyReturn}
+
+
+Definition at line 214 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a8592712e3b3203a0d6dda85ef5a9ec8b}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!recognize@{recognize}}
+\index{recognize@{recognize}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{recognize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-recognize} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a8592712e3b3203a0d6dda85ef5a9ec8b}
+
+
+Definition at line 273 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ac2c2dc188ed0f5a3f0a43e52b28e0fc6}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!set\-Listener@{set\-Listener}}
+\index{set\-Listener@{set\-Listener}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{set\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-set\-Listener} (
+\begin{DoxyParamCaption}
+\item[{Grammar\-Listener}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ac2c2dc188ed0f5a3f0a43e52b28e0fc6}
+Sets this grammar's listener, which will receive recognition results and status updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 269 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ac5492e0db70e3a156d4d250c848379c0}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{shutdown}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-shutdown} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_ac5492e0db70e3a156d4d250c848379c0}
+Stops the recognition thread and destroys the recognizer. You may not call any methods on the object after calling this method. 
+
+Definition at line 127 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a1fd47a5511fa2b7c51eb1b76735a6a62}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!stop@{stop}}
+\index{stop@{stop}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a1fd47a5511fa2b7c51eb1b76735a6a62}
+Interrupts the recognition thread. You may call still \hyperlink{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a8592712e3b3203a0d6dda85ef5a9ec8b}{recognize()} after calling this method.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Grammar\-Recognizer.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a5e17fa7461528dfc7eb4360c07360b80}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!E\-R\-R\-O\-R@{E\-R\-R\-O\-R}}
+\index{E\-R\-R\-O\-R@{E\-R\-R\-O\-R}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-E\-R\-R\-O\-R} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a5e17fa7461528dfc7eb4360c07360b80}
+
+
+Definition at line 59 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_adb985941250757b2c8cdc4ac5713a4e9}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E@{K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E}}
+\index{K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E@{K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E} = Recognizer.\-K\-E\-Y\-\_\-\-C\-O\-N\-F\-I\-D\-E\-N\-C\-E\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_adb985941250757b2c8cdc4ac5713a4e9}
+
+
+Definition at line 61 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_aa0198125888a9433fb8900ca98dbd0b3}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L@{K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L}}
+\index{K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L@{K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L} = Recognizer.\-K\-E\-Y\-\_\-\-L\-I\-T\-E\-R\-A\-L\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_aa0198125888a9433fb8900ca98dbd0b3}
+
+
+Definition at line 63 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a328c5d1b90c9f0c0368414ec6c046039}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G@{K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G}}
+\index{K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G@{K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G} = Recognizer.\-K\-E\-Y\-\_\-\-M\-E\-A\-N\-I\-N\-G\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a328c5d1b90c9f0c0368414ec6c046039}
+
+
+Definition at line 65 of file Grammar\-Recognizer.\-java.
+
+\hypertarget{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a2725b39cfa9b27f08885011fac773584}{\index{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}!S\-U\-C\-C\-E\-S\-S@{S\-U\-C\-C\-E\-S\-S}}
+\index{S\-U\-C\-C\-E\-S\-S@{S\-U\-C\-C\-E\-S\-S}!com::googlecode::eyesfree::voicecontrol::GrammarRecognizer@{com\-::googlecode\-::eyesfree\-::voicecontrol\-::\-Grammar\-Recognizer}}
+\subsubsection[{S\-U\-C\-C\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-googlecode.\-eyesfree.\-voicecontrol.\-Grammar\-Recognizer.\-S\-U\-C\-C\-E\-S\-S} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1googlecode_1_1eyesfree_1_1voicecontrol_1_1_grammar_recognizer_a2725b39cfa9b27f08885011fac773584}
+
+
+Definition at line 57 of file Grammar\-Recognizer.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/googlecode/eyesfree/voicecontrol/\hyperlink{_grammar_recognizer_8java}{Grammar\-Recognizer.\-java}\end{DoxyCompactItemize}

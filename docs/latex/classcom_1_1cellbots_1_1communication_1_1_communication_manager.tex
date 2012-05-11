@@ -1,0 +1,271 @@
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager}{\section{com.\-cellbots.\-communication.\-Communication\-Manager Class Reference}
+\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager}\index{com.\-cellbots.\-communication.\-Communication\-Manager@{com.\-cellbots.\-communication.\-Communication\-Manager}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ad74c4c8a8a056c6e10a6e71baa728955}{Communication\-Manager} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a401349d7b51a313ac305e751398021dc}{add\-Http\-Channel} (String name, String receiving\-Url, String sending\-Url, \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}{Comm\-Message\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a9798c0480dfed8dbc16544f3cd5a2ddb}{add\-Xmpp\-Comm\-Channel} (String name, String username, String passwd, String target\-Username, \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}{Comm\-Message\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a2ba106b259b3ca7e79b8f18572a8ccef}{add\-App\-Engine\-Comm\-Channel} (String name, String url, \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}{Comm\-Message\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_adab1f815ff3e098cdd8a1baf311d4973}{connect\-All} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ae369d02d00ce94d22b28b4762eb174e8}{disconnect\-All} ()
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a7ce275088d93d33cfe98a2a74136bf10}{listen\-For\-Messages} (String channel\-Name, long poll\-Wait\-Time, boolean return\-Stream)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_af138e3047693692c3debbc097530fe1a}{send\-Message} (String channel\-Name, String message, String type)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ae97b5a5fc1d236a007c443c8fd62439e}{C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E} = 0x00
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a050372ed3661baedb8e8811b3c172121}{C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P} = 0x01
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_af99bd8872667d307699cf6ca751a995a}{C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E} = 0x01 $<$$<$ 1
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a4d449547286440b770e3e66514070702}{C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P} = 0x01 $<$$<$ 2
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a4c0351c4b77785eae3d4bb1c03c95d9f}{C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P} = 0x01 $<$$<$ 3
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a071fba74dfd65ee14b059f3789beb05a}{C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E} = 0x01 $<$$<$ 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class acts as a easy-\/to-\/use wrapper for using and managing different communication channels.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 29 of file Communication\-Manager.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ad74c4c8a8a056c6e10a6e71baa728955}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!Communication\-Manager@{Communication\-Manager}}
+\index{Communication\-Manager@{Communication\-Manager}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{Communication\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-Communication\-Manager} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ad74c4c8a8a056c6e10a6e71baa728955}
+
+
+Definition at line 45 of file Communication\-Manager.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a2ba106b259b3ca7e79b8f18572a8ccef}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!add\-App\-Engine\-Comm\-Channel@{add\-App\-Engine\-Comm\-Channel}}
+\index{add\-App\-Engine\-Comm\-Channel@{add\-App\-Engine\-Comm\-Channel}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{add\-App\-Engine\-Comm\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-add\-App\-Engine\-Comm\-Channel} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{url, }
+\item[{{\bf Comm\-Message\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a2ba106b259b3ca7e79b8f18572a8ccef}
+Add a new App\-Engine-\/based H\-T\-T\-P relay channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the channel. \\
+\hline
+{\em url} & The base url for receiving and sending messages. \\
+\hline
+{\em listener} & The listener to received callback for this X\-M\-P\-P channel. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a401349d7b51a313ac305e751398021dc}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!add\-Http\-Channel@{add\-Http\-Channel}}
+\index{add\-Http\-Channel@{add\-Http\-Channel}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{add\-Http\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-add\-Http\-Channel} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{receiving\-Url, }
+\item[{String}]{sending\-Url, }
+\item[{{\bf Comm\-Message\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a401349d7b51a313ac305e751398021dc}
+Add a new H\-T\-T\-P relay channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the channel. \\
+\hline
+{\em receiving\-Url} & Receive message by polling this U\-R\-L. \\
+\hline
+{\em sending\-Url} & Send messages by P\-U\-Ting to this U\-R\-L. \\
+\hline
+{\em listener} & The listener to received callback for this H\-T\-T\-P channel. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a9798c0480dfed8dbc16544f3cd5a2ddb}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!add\-Xmpp\-Comm\-Channel@{add\-Xmpp\-Comm\-Channel}}
+\index{add\-Xmpp\-Comm\-Channel@{add\-Xmpp\-Comm\-Channel}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{add\-Xmpp\-Comm\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-add\-Xmpp\-Comm\-Channel} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{username, }
+\item[{String}]{passwd, }
+\item[{String}]{target\-Username, }
+\item[{{\bf Comm\-Message\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a9798c0480dfed8dbc16544f3cd5a2ddb}
+Add a new X\-M\-P\-P channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the channel. \\
+\hline
+{\em username} & Username with which to sign-\/in. \\
+\hline
+{\em passwd} & Account password. \\
+\hline
+{\em listener} & The listener to received callback for this X\-M\-P\-P channel. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 79 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_adab1f815ff3e098cdd8a1baf311d4973}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!connect\-All@{connect\-All}}
+\index{connect\-All@{connect\-All}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{connect\-All}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-connect\-All} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_adab1f815ff3e098cdd8a1baf311d4973}
+Connect all added channels. 
+
+Definition at line 103 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ae369d02d00ce94d22b28b4762eb174e8}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!disconnect\-All@{disconnect\-All}}
+\index{disconnect\-All@{disconnect\-All}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{disconnect\-All}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-disconnect\-All} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ae369d02d00ce94d22b28b4762eb174e8}
+Disconnect all channels. 
+
+Definition at line 112 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a7ce275088d93d33cfe98a2a74136bf10}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!listen\-For\-Messages@{listen\-For\-Messages}}
+\index{listen\-For\-Messages@{listen\-For\-Messages}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{listen\-For\-Messages}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-listen\-For\-Messages} (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\-Name, }
+\item[{long}]{poll\-Wait\-Time, }
+\item[{boolean}]{return\-Stream}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a7ce275088d93d33cfe98a2a74136bf10}
+Start listening for messages on the specified channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\-Name} & Channel name on which to listen for messages. \\
+\hline
+{\em poll\-Wait\-Time} & Duration in ms to wait for before polling for the next message. \\
+\hline
+{\em return\-Stream} & Whether to return an Input\-Stream for the received message through the \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_aec6333b51b689d99d873bd8911bf9444}{Comm\-Message\-Listener.\-on\-Message()} callback. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the request channel exists and the request for listening went through successfully. 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_af138e3047693692c3debbc097530fe1a}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!send\-Message@{send\-Message}}
+\index{send\-Message@{send\-Message}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{send\-Message}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-send\-Message} (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\-Name, }
+\item[{String}]{message, }
+\item[{String}]{type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_af138e3047693692c3debbc097530fe1a}
+Sends the message over the specified channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\-Name} & The channel name to send the message via. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em type} & The mime type of the message content, ex\-: \char`\"{}text/text\char`\"{}, \char`\"{}image/jpg\char`\"{}, \char`\"{}text/html\char`\"{}, etc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if the specified channel exists and the request for sending the message went through successfully. 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Communication\-Manager.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_af99bd8872667d307699cf6ca751a995a}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E@{C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E}}
+\index{C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E@{C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-C\-H\-A\-N\-N\-E\-L\-\_\-\-G\-A\-E} = 0x01 $<$$<$ 1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_af99bd8872667d307699cf6ca751a995a}
+
+
+Definition at line 35 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a050372ed3661baedb8e8811b3c172121}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P@{C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P}}
+\index{C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P@{C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-C\-H\-A\-N\-N\-E\-L\-\_\-\-H\-T\-T\-P} = 0x01\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a050372ed3661baedb8e8811b3c172121}
+
+
+Definition at line 33 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a071fba74dfd65ee14b059f3789beb05a}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E@{C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E}}
+\index{C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E@{C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-C\-H\-A\-N\-N\-E\-L\-\_\-\-J\-I\-N\-G\-L\-E} = 0x01 $<$$<$ 4\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a071fba74dfd65ee14b059f3789beb05a}
+
+
+Definition at line 41 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a4c0351c4b77785eae3d4bb1c03c95d9f}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P@{C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P}}
+\index{C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P@{C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-C\-H\-A\-N\-N\-E\-L\-\_\-\-L\-O\-C\-A\-L\-\_\-\-H\-T\-T\-P} = 0x01 $<$$<$ 3\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a4c0351c4b77785eae3d4bb1c03c95d9f}
+
+
+Definition at line 39 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ae97b5a5fc1d236a007c443c8fd62439e}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E@{C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E}}
+\index{C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E@{C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-C\-H\-A\-N\-N\-E\-L\-\_\-\-N\-O\-N\-E} = 0x00\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_ae97b5a5fc1d236a007c443c8fd62439e}
+
+
+Definition at line 31 of file Communication\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a4d449547286440b770e3e66514070702}{\index{com\-::cellbots\-::communication\-::\-Communication\-Manager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}!C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P@{C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P}}
+\index{C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P@{C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P}!com::cellbots::communication::CommunicationManager@{com\-::cellbots\-::communication\-::\-Communication\-Manager}}
+\subsubsection[{C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-communication.\-Communication\-Manager.\-C\-H\-A\-N\-N\-E\-L\-\_\-\-X\-M\-P\-P} = 0x01 $<$$<$ 2\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_communication_manager_a4d449547286440b770e3e66514070702}
+
+
+Definition at line 37 of file Communication\-Manager.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/communication/\hyperlink{_communication_manager_8java}{Communication\-Manager.\-java}\end{DoxyCompactItemize}

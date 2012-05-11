@@ -1,0 +1,334 @@
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create}{\section{com.\-cellbots.\-Robot\-Base\-Create Class Reference}
+\label{classcom_1_1cellbots_1_1_robot_base_create}\index{com.\-cellbots.\-Robot\-Base\-Create@{com.\-cellbots.\-Robot\-Base\-Create}}
+}
+Inheritance diagram for com.\-cellbots.\-Robot\-Base\-Create\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.372549cm]{classcom_1_1cellbots_1_1_robot_base_create}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a4ffb9ed3243df618b692200f44745592}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_ab5594673881e6b8f6521e3047702c636}{on\-Activity\-Result} (int request\-Code, int result\-Code, Intent intent)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a74e650e121afbbf506417dea8c6955b4}{get\-Paired\-Bluetooth} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a100b56d8ac81baa2e4b2acc8e79423e8}{setup\-Cancel\-Button} (Activity me, int id)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a13f290d1e7ed4948d0d14da774ae076b}{setup\-Robot\-Type\-List} (Context ctx, Spinner spin)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_ac29708c753a43459596917a09e17edcc}{setup\-Bluetooth\-Pair\-List} (Spinner spin)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a994fea32b4961e33532f367931d945e5}{setup\-Comm\-Spinner} (Spinner cspin)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a798b325690b9c5cf7f125cb4ce4acd86}{setup\-Qr\-Scan\-Button} (Activity me, int id)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a517846f7c3a7df6adeadbd5db50ce7cd}{robot\-Scan\-Result} (\hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} scanned\-Entry)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a56132e830bbc0b23f39d11a47ce80fa1}{build\-Spinner} (Spinner spinner, String\mbox{[}$\,$\mbox{]} list)
+\item 
+String \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_ad3b9118fbd142b172ac65431e9a60d0d}{get\-String\-From\-Field} (Object object)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1_robot_list}{Robot\-List} \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a84275e4b962c1fe41e54ebf19f2e57d3}{m\-Robot\-Profiles}
+\item 
+Shared\-Preferences \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a67e665a1fb6390ef9611ef49c37d565a}{m\-Prefs}
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a5093176d9dc3caf9fe69b9acf559a7df}{m\-Is\-Edit}
+\item 
+String \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_ada07a21cae8d09e6747da5d39d6bfd8e}{m\-Name}
+\item 
+Bundle \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a55c7d7396c6382fb2c43c03a8326e8de}{m\-Extras}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a2d9ebfd2f0fbbb3ae015a8693e0a5314}{m\-Comm\-Choices}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a83b5a7890ea7a107403eb9b7eab71ae9}{m\-Cellbot\-Types}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a60382b286edc68e4d6544aac289543fb}{m\-Cellbot\-Bts}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Uri \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a0fd425bbaf0c1a2f3880880fa7110564}{B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I}
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_ae34863efd6d16b8564ddbfe450afafda}{I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R} = 100
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class that includes methods useful for various robot profile creation activities.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:css@google.com}{\tt css@google.\-com} (Charles Spirakis) 
+\end{DoxyAuthor}
+
+
+Definition at line 48 of file Robot\-Base\-Create.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a56132e830bbc0b23f39d11a47ce80fa1}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!build\-Spinner@{build\-Spinner}}
+\index{build\-Spinner@{build\-Spinner}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{build\-Spinner}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-build\-Spinner} (
+\begin{DoxyParamCaption}
+\item[{Spinner}]{spinner, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a56132e830bbc0b23f39d11a47ce80fa1}
+Builds a spinner from a Spinner and a list of string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spinner} & The Spinner \\
+\hline
+{\em list} & list of strings. Cannot be null, but can be an array of zero length \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 226 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a74e650e121afbbf506417dea8c6955b4}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!get\-Paired\-Bluetooth@{get\-Paired\-Bluetooth}}
+\index{get\-Paired\-Bluetooth@{get\-Paired\-Bluetooth}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{get\-Paired\-Bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}static String \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-Robot\-Base\-Create.\-get\-Paired\-Bluetooth} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a74e650e121afbbf506417dea8c6955b4}
+
+
+Definition at line 244 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_ad3b9118fbd142b172ac65431e9a60d0d}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!get\-String\-From\-Field@{get\-String\-From\-Field}}
+\index{get\-String\-From\-Field@{get\-String\-From\-Field}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{get\-String\-From\-Field}]{\setlength{\rightskip}{0pt plus 5cm}String {\bf com.\-cellbots.\-Robot\-Base\-Create.\-get\-String\-From\-Field} (
+\begin{DoxyParamCaption}
+\item[{Object}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_ad3b9118fbd142b172ac65431e9a60d0d}
+
+
+Definition at line 236 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_ab5594673881e6b8f6521e3047702c636}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!on\-Activity\-Result@{on\-Activity\-Result}}
+\index{on\-Activity\-Result@{on\-Activity\-Result}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{on\-Activity\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-on\-Activity\-Result} (
+\begin{DoxyParamCaption}
+\item[{int}]{request\-Code, }
+\item[{int}]{result\-Code, }
+\item[{Intent}]{intent}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_base_create_ab5594673881e6b8f6521e3047702c636}
+
+
+Reimplemented in \hyperlink{classcom_1_1cellbots_1_1_robot_create_brain_activity_ae85c44b0c0f15f929f86976ab06769db}{com.\-cellbots.\-Robot\-Create\-Brain\-Activity}, and \hyperlink{classcom_1_1cellbots_1_1_robot_creation_activity_a7280119544e94c6dce0d0042ce178709}{com.\-cellbots.\-Robot\-Creation\-Activity}.
+
+
+
+Definition at line 178 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a4ffb9ed3243df618b692200f44745592}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_base_create_a4ffb9ed3243df618b692200f44745592}
+Do the basics that are required for creation classes. This includes getting the list of robots available, determining if this was an edit or create call, getting the name passed to us (if available), etc. 
+
+Reimplemented in \hyperlink{classcom_1_1cellbots_1_1_robot_create_brain_activity_a8d8a870b866a9ef2b5e51489c313fe86}{com.\-cellbots.\-Robot\-Create\-Brain\-Activity}, \hyperlink{classcom_1_1cellbots_1_1_robot_creation_activity_a68ba54996597a8266a131e2c67d3c9cb}{com.\-cellbots.\-Robot\-Creation\-Activity}, and \hyperlink{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_acd9708d99c328560293aae7865aa98cc}{com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity}.
+
+
+
+Definition at line 81 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a517846f7c3a7df6adeadbd5db50ce7cd}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!robot\-Scan\-Result@{robot\-Scan\-Result}}
+\index{robot\-Scan\-Result@{robot\-Scan\-Result}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{robot\-Scan\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-robot\-Scan\-Result} (
+\begin{DoxyParamCaption}
+\item[{{\bf Robot\-Entry}}]{scanned\-Entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a517846f7c3a7df6adeadbd5db50ce7cd}
+After a scan has occurred, this method is called with the values that were scanned in. Should be overridden by children who want the scanned in data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scanned\-Entry} & scanned in \hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry}. Only the data from the scan is included. The callee should take what they need and fill in defaults for missing values that are needed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classcom_1_1cellbots_1_1_robot_create_brain_activity_a22371759d135bf54e7a56b6dbd9e0dc2}{com.\-cellbots.\-Robot\-Create\-Brain\-Activity}, \hyperlink{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_a24e4ff4809baea1bb353570934feec1c}{com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity}, and \hyperlink{classcom_1_1cellbots_1_1_robot_creation_activity_a6644d24c8f147f3ebc1a132d0c968160}{com.\-cellbots.\-Robot\-Creation\-Activity}.
+
+
+
+Definition at line 212 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_ac29708c753a43459596917a09e17edcc}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!setup\-Bluetooth\-Pair\-List@{setup\-Bluetooth\-Pair\-List}}
+\index{setup\-Bluetooth\-Pair\-List@{setup\-Bluetooth\-Pair\-List}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{setup\-Bluetooth\-Pair\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-setup\-Bluetooth\-Pair\-List} (
+\begin{DoxyParamCaption}
+\item[{Spinner}]{spin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_ac29708c753a43459596917a09e17edcc}
+
+
+Definition at line 125 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a100b56d8ac81baa2e4b2acc8e79423e8}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!setup\-Cancel\-Button@{setup\-Cancel\-Button}}
+\index{setup\-Cancel\-Button@{setup\-Cancel\-Button}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{setup\-Cancel\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-setup\-Cancel\-Button} (
+\begin{DoxyParamCaption}
+\item[{Activity}]{me, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a100b56d8ac81baa2e4b2acc8e79423e8}
+
+
+Definition at line 105 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a994fea32b4961e33532f367931d945e5}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!setup\-Comm\-Spinner@{setup\-Comm\-Spinner}}
+\index{setup\-Comm\-Spinner@{setup\-Comm\-Spinner}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{setup\-Comm\-Spinner}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-setup\-Comm\-Spinner} (
+\begin{DoxyParamCaption}
+\item[{Spinner}]{cspin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a994fea32b4961e33532f367931d945e5}
+
+
+Definition at line 130 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a798b325690b9c5cf7f125cb4ce4acd86}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!setup\-Qr\-Scan\-Button@{setup\-Qr\-Scan\-Button}}
+\index{setup\-Qr\-Scan\-Button@{setup\-Qr\-Scan\-Button}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{setup\-Qr\-Scan\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-setup\-Qr\-Scan\-Button} (
+\begin{DoxyParamCaption}
+\item[{Activity}]{me, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a798b325690b9c5cf7f125cb4ce4acd86}
+Start up the barcode scanner. If the scanner can't be found, provide a dialog alert allowing the user to install via the marketplace
+
+
+\begin{DoxyParams}{Parameters}
+{\em me} & activity that is initiating the scanner \\
+\hline
+{\em id} & layout id for the button which initiates the scan request \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a13f290d1e7ed4948d0d14da774ae076b}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!setup\-Robot\-Type\-List@{setup\-Robot\-Type\-List}}
+\index{setup\-Robot\-Type\-List@{setup\-Robot\-Type\-List}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{setup\-Robot\-Type\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Base\-Create.\-setup\-Robot\-Type\-List} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctx, }
+\item[{Spinner}]{spin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a13f290d1e7ed4948d0d14da774ae076b}
+
+
+Definition at line 117 of file Robot\-Base\-Create.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a0fd425bbaf0c1a2f3880880fa7110564}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I@{B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I}}
+\index{B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I@{B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}final Uri {\bf com.\-cellbots.\-Robot\-Base\-Create.\-B\-A\-R\-C\-O\-D\-E\-\_\-\-S\-C\-A\-N\-N\-E\-R\-\_\-\-M\-A\-R\-K\-E\-T\-\_\-\-U\-R\-I}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a0fd425bbaf0c1a2f3880880fa7110564}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ Uri
+                        .parse("
+      market://search?q=pname:com.google.zxing.client.android")
+\end{DoxyCode}
+
+
+Definition at line 52 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_ae34863efd6d16b8564ddbfe450afafda}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R@{I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R}}
+\index{I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R@{I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-Robot\-Base\-Create.\-I\-N\-T\-E\-N\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-S\-C\-A\-N\-N\-E\-R} = 100\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_ae34863efd6d16b8564ddbfe450afafda}
+
+
+Definition at line 55 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a60382b286edc68e4d6544aac289543fb}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Cellbot\-Bts@{m\-Cellbot\-Bts}}
+\index{m\-Cellbot\-Bts@{m\-Cellbot\-Bts}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Cellbot\-Bts}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Cellbot\-Bts}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a60382b286edc68e4d6544aac289543fb}
+
+
+Definition at line 73 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a83b5a7890ea7a107403eb9b7eab71ae9}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Cellbot\-Types@{m\-Cellbot\-Types}}
+\index{m\-Cellbot\-Types@{m\-Cellbot\-Types}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Cellbot\-Types}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Cellbot\-Types}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a83b5a7890ea7a107403eb9b7eab71ae9}
+
+
+Definition at line 71 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a2d9ebfd2f0fbbb3ae015a8693e0a5314}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Comm\-Choices@{m\-Comm\-Choices}}
+\index{m\-Comm\-Choices@{m\-Comm\-Choices}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Comm\-Choices}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Comm\-Choices}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a2d9ebfd2f0fbbb3ae015a8693e0a5314}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ new String[] { 
+                        "Google Talk", "Custom HTTP" }
+\end{DoxyCode}
+
+
+Definition at line 68 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a55c7d7396c6382fb2c43c03a8326e8de}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Extras@{m\-Extras}}
+\index{m\-Extras@{m\-Extras}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Extras}]{\setlength{\rightskip}{0pt plus 5cm}Bundle {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Extras}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a55c7d7396c6382fb2c43c03a8326e8de}
+
+
+Definition at line 65 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a5093176d9dc3caf9fe69b9acf559a7df}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Is\-Edit@{m\-Is\-Edit}}
+\index{m\-Is\-Edit@{m\-Is\-Edit}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Is\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Is\-Edit}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a5093176d9dc3caf9fe69b9acf559a7df}
+
+
+Definition at line 61 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_ada07a21cae8d09e6747da5d39d6bfd8e}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Name@{m\-Name}}
+\index{m\-Name@{m\-Name}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_ada07a21cae8d09e6747da5d39d6bfd8e}
+
+
+Definition at line 63 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a67e665a1fb6390ef9611ef49c37d565a}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Prefs@{m\-Prefs}}
+\index{m\-Prefs@{m\-Prefs}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Prefs}]{\setlength{\rightskip}{0pt plus 5cm}Shared\-Preferences {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Prefs}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a67e665a1fb6390ef9611ef49c37d565a}
+
+
+Definition at line 59 of file Robot\-Base\-Create.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_base_create_a84275e4b962c1fe41e54ebf19f2e57d3}{\index{com\-::cellbots\-::\-Robot\-Base\-Create@{com\-::cellbots\-::\-Robot\-Base\-Create}!m\-Robot\-Profiles@{m\-Robot\-Profiles}}
+\index{m\-Robot\-Profiles@{m\-Robot\-Profiles}!com::cellbots::RobotBaseCreate@{com\-::cellbots\-::\-Robot\-Base\-Create}}
+\subsubsection[{m\-Robot\-Profiles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-List} {\bf com.\-cellbots.\-Robot\-Base\-Create.\-m\-Robot\-Profiles}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_base_create_a84275e4b962c1fe41e54ebf19f2e57d3}
+
+
+Definition at line 57 of file Robot\-Base\-Create.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/\hyperlink{_robot_base_create_8java}{Robot\-Base\-Create.\-java}\end{DoxyCompactItemize}

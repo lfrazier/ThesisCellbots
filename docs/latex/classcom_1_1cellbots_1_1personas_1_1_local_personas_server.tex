@@ -1,0 +1,148 @@
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server}{\section{com.\-cellbots.\-personas.\-Local\-Personas\-Server Class Reference}
+\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server}\index{com.\-cellbots.\-personas.\-Local\-Personas\-Server@{com.\-cellbots.\-personas.\-Local\-Personas\-Server}}
+}
+
+
+Inherits Content\-Provider.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Parcel\-File\-Descriptor \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_a8d8f4158d6904db8d65cc730871d2ef1}{open\-File} (Uri uri, String mode)  throws File\-Not\-Found\-Exception 
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_adc890239f90b239b97ce185de2c942db}{on\-Create} ()
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aaeeeff0b517f086030825b59bb6333e8}{delete} (Uri uri, String s, String\mbox{[}$\,$\mbox{]} as)
+\item 
+String \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_adc23c80bd2ac08d1d82790f511b66660}{get\-Type} (Uri uri)
+\item 
+Uri \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aed58ebe507a334857d99f129a04d84b4}{insert} (Uri uri, Content\-Values contentvalues)
+\item 
+Cursor \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aa8ec8a9cbc503521788b91e996a9229a}{query} (Uri uri, String\mbox{[}$\,$\mbox{]} as, String s, String\mbox{[}$\,$\mbox{]} as1, String s1)
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_a136f6c8628a8b7962a8c25d680868f1d}{update} (Uri uri, Content\-Values contentvalues, String s, String\mbox{[}$\,$\mbox{]} as)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_acee76b7b04f615d8a25de7a5a5a3dd0c}{construct\-Uri} (String url)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Content Provider for serving personas. Persona files must be stored under\-: /sdcard/cellbot/personas/\-P\-E\-R\-S\-O\-N\-A\-\_\-\-N\-A\-M\-E/ Access persona files by using this pattern\-: content\-://com.cellbot.\-localpersonas/\-P\-E\-R\-S\-O\-N\-A\-\_\-\-N\-A\-M\-E/\-F\-I\-L\-E For example\-: /sdcard/cellbot/personas/default/happy.png can be accessed in the Web\-View by using\-: content\-://com.cellbot.\-localpersonas/default/happy.png I\-M\-P\-O\-R\-T\-A\-N\-T N\-O\-T\-E\-: For security reasons, you are not allowed to access anything with \char`\"{}..\char`\"{} or \char`\"{}//\char`\"{} in the path. This is to prevent a personas script from accessing the rest of the S\-D card.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clchen@google.com}{\tt clchen@google.\-com} (Charles L. Chen) 
+\end{DoxyAuthor}
+
+
+Definition at line 41 of file Local\-Personas\-Server.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_acee76b7b04f615d8a25de7a5a5a3dd0c}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!construct\-Uri@{construct\-Uri}}
+\index{construct\-Uri@{construct\-Uri}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{construct\-Uri}]{\setlength{\rightskip}{0pt plus 5cm}static String {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-construct\-Uri} (
+\begin{DoxyParamCaption}
+\item[{String}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_acee76b7b04f615d8a25de7a5a5a3dd0c}
+
+
+Definition at line 44 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aaeeeff0b517f086030825b59bb6333e8}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!delete@{delete}}
+\index{delete@{delete}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-delete} (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{String}]{s, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{as}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aaeeeff0b517f086030825b59bb6333e8}
+
+
+Definition at line 76 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_adc23c80bd2ac08d1d82790f511b66660}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}String {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-get\-Type} (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_adc23c80bd2ac08d1d82790f511b66660}
+
+
+Definition at line 82 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aed58ebe507a334857d99f129a04d84b4}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!insert@{insert}}
+\index{insert@{insert}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}Uri {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-insert} (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{Content\-Values}]{contentvalues}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aed58ebe507a334857d99f129a04d84b4}
+
+
+Definition at line 88 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_adc890239f90b239b97ce185de2c942db}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-on\-Create} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_adc890239f90b239b97ce185de2c942db}
+
+
+Definition at line 71 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_a8d8f4158d6904db8d65cc730871d2ef1}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!open\-File@{open\-File}}
+\index{open\-File@{open\-File}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{open\-File}]{\setlength{\rightskip}{0pt plus 5cm}Parcel\-File\-Descriptor {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-open\-File} (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{String}]{mode}
+\end{DoxyParamCaption}
+)  throws File\-Not\-Found\-Exception }}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_a8d8f4158d6904db8d65cc730871d2ef1}
+
+
+Definition at line 50 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aa8ec8a9cbc503521788b91e996a9229a}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!query@{query}}
+\index{query@{query}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}Cursor {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-query} (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{as, }
+\item[{String}]{s, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{as1, }
+\item[{String}]{s1}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_aa8ec8a9cbc503521788b91e996a9229a}
+
+
+Definition at line 94 of file Local\-Personas\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_a136f6c8628a8b7962a8c25d680868f1d}{\index{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}!update@{update}}
+\index{update@{update}!com::cellbots::personas::LocalPersonasServer@{com\-::cellbots\-::personas\-::\-Local\-Personas\-Server}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-personas.\-Local\-Personas\-Server.\-update} (
+\begin{DoxyParamCaption}
+\item[{Uri}]{uri, }
+\item[{Content\-Values}]{contentvalues, }
+\item[{String}]{s, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{as}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1personas_1_1_local_personas_server_a136f6c8628a8b7962a8c25d680868f1d}
+
+
+Definition at line 100 of file Local\-Personas\-Server.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/personas/\hyperlink{_local_personas_server_8java}{Local\-Personas\-Server.\-java}\end{DoxyCompactItemize}

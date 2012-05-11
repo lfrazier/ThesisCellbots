@@ -1,0 +1,95 @@
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_brain_activity}{\section{com.\-cellbots.\-Robot\-Create\-Brain\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1_robot_create_brain_activity}\index{com.\-cellbots.\-Robot\-Create\-Brain\-Activity@{com.\-cellbots.\-Robot\-Create\-Brain\-Activity}}
+}
+Inheritance diagram for com.\-cellbots.\-Robot\-Create\-Brain\-Activity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1_robot_create_brain_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_create_brain_activity_a8d8a870b866a9ef2b5e51489c313fe86}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_create_brain_activity_ae85c44b0c0f15f929f86976ab06769db}{on\-Activity\-Result} (int request\-Code, int result\-Code, Intent data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_create_brain_activity_a22371759d135bf54e7a56b6dbd9e0dc2}{robot\-Scan\-Result} (\hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} scanned\-Entry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allow a user to edit or create a robot profile for use as a local or \char`\"{}brain\char`\"{} for a cell bot.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:css@google.com}{\tt css@google.\-com} (Charles Spirakis) 
+\end{DoxyAuthor}
+
+
+Definition at line 44 of file Robot\-Create\-Brain\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_brain_activity_ae85c44b0c0f15f929f86976ab06769db}{\index{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity@{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity}!on\-Activity\-Result@{on\-Activity\-Result}}
+\index{on\-Activity\-Result@{on\-Activity\-Result}!com::cellbots::RobotCreateBrainActivity@{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity}}
+\subsubsection[{on\-Activity\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Create\-Brain\-Activity.\-on\-Activity\-Result} (
+\begin{DoxyParamCaption}
+\item[{int}]{request\-Code, }
+\item[{int}]{result\-Code, }
+\item[{Intent}]{data}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_create_brain_activity_ae85c44b0c0f15f929f86976ab06769db}
+
+
+Reimplemented from \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_ab5594673881e6b8f6521e3047702c636}{com.\-cellbots.\-Robot\-Base\-Create}.
+
+
+
+Definition at line 350 of file Robot\-Create\-Brain\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_brain_activity_a8d8a870b866a9ef2b5e51489c313fe86}{\index{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity@{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::RobotCreateBrainActivity@{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Create\-Brain\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_create_brain_activity_a8d8a870b866a9ef2b5e51489c313fe86}
+Do the basics that are required for creation classes. This includes getting the list of robots available, determining if this was an edit or create call, getting the name passed to us (if available), etc. 
+
+Reimplemented from \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a4ffb9ed3243df618b692200f44745592}{com.\-cellbots.\-Robot\-Base\-Create}.
+
+
+
+Definition at line 72 of file Robot\-Create\-Brain\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_brain_activity_a22371759d135bf54e7a56b6dbd9e0dc2}{\index{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity@{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity}!robot\-Scan\-Result@{robot\-Scan\-Result}}
+\index{robot\-Scan\-Result@{robot\-Scan\-Result}!com::cellbots::RobotCreateBrainActivity@{com\-::cellbots\-::\-Robot\-Create\-Brain\-Activity}}
+\subsubsection[{robot\-Scan\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Create\-Brain\-Activity.\-robot\-Scan\-Result} (
+\begin{DoxyParamCaption}
+\item[{{\bf Robot\-Entry}}]{scanned\-Entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_create_brain_activity_a22371759d135bf54e7a56b6dbd9e0dc2}
+After a scan has occurred, this method is called with the values that were scanned in. Should be overridden by children who want the scanned in data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scanned\-Entry} & scanned in \hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry}. Only the data from the scan is included. The callee should take what they need and fill in defaults for missing values that are needed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a517846f7c3a7df6adeadbd5db50ce7cd}{com.\-cellbots.\-Robot\-Base\-Create}.
+
+
+
+Definition at line 345 of file Robot\-Create\-Brain\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/\hyperlink{_robot_create_brain_activity_8java}{Robot\-Create\-Brain\-Activity.\-java}\end{DoxyCompactItemize}

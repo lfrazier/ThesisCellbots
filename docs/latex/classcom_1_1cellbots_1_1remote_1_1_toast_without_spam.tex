@@ -1,0 +1,65 @@
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam}{\section{com.\-cellbots.\-remote.\-Toast\-Without\-Spam Class Reference}
+\label{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam}\index{com.\-cellbots.\-remote.\-Toast\-Without\-Spam@{com.\-cellbots.\-remote.\-Toast\-Without\-Spam}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam_add10c0f2b5c38334f4d6a40a16cc7f9d}{Toast\-Without\-Spam} (Activity activity, Context context, int depth, int min\-Time\-Ms)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam_abb4093c0b8243ab6ab03997169ec2da6}{send\-Toast} (final String text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Send a toast message to the user. Can be called from a background task (that has no U\-I thread) and is thread safe (so can be called from any thread at any time). Avoids sending the same message to the user within D milliseconds so that threads in a loop don't spam the toast.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:css@google.com}{\tt css@google.\-com} (Charles Spirakis) 
+\end{DoxyAuthor}
+
+
+Definition at line 38 of file Toast\-Without\-Spam.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam_add10c0f2b5c38334f4d6a40a16cc7f9d}{\index{com\-::cellbots\-::remote\-::\-Toast\-Without\-Spam@{com\-::cellbots\-::remote\-::\-Toast\-Without\-Spam}!Toast\-Without\-Spam@{Toast\-Without\-Spam}}
+\index{Toast\-Without\-Spam@{Toast\-Without\-Spam}!com::cellbots::remote::ToastWithoutSpam@{com\-::cellbots\-::remote\-::\-Toast\-Without\-Spam}}
+\subsubsection[{Toast\-Without\-Spam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-remote.\-Toast\-Without\-Spam.\-Toast\-Without\-Spam} (
+\begin{DoxyParamCaption}
+\item[{Activity}]{activity, }
+\item[{Context}]{context, }
+\item[{int}]{depth, }
+\item[{int}]{min\-Time\-Ms}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam_add10c0f2b5c38334f4d6a40a16cc7f9d}
+
+
+Definition at line 55 of file Toast\-Without\-Spam.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam_abb4093c0b8243ab6ab03997169ec2da6}{\index{com\-::cellbots\-::remote\-::\-Toast\-Without\-Spam@{com\-::cellbots\-::remote\-::\-Toast\-Without\-Spam}!send\-Toast@{send\-Toast}}
+\index{send\-Toast@{send\-Toast}!com::cellbots::remote::ToastWithoutSpam@{com\-::cellbots\-::remote\-::\-Toast\-Without\-Spam}}
+\subsubsection[{send\-Toast}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-remote.\-Toast\-Without\-Spam.\-send\-Toast} (
+\begin{DoxyParamCaption}
+\item[{final String}]{text}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_toast_without_spam_abb4093c0b8243ab6ab03997169ec2da6}
+Cause toast to pop up. Can be called from a background process as this uses run\-On\-Ui\-Thread() to make sure the toast can be created.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to put on the toast \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file Toast\-Without\-Spam.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/remote/\hyperlink{_toast_without_spam_8java}{Toast\-Without\-Spam.\-java}\end{DoxyCompactItemize}

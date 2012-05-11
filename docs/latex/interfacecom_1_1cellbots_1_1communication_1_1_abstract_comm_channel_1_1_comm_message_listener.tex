@@ -1,0 +1,65 @@
+\hypertarget{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}{\section{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener Interface Reference}
+\label{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}\index{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener@{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_aec6333b51b689d99d873bd8911bf9444}{on\-Message} (\hyperlink{classcom_1_1cellbots_1_1communication_1_1_comm_message}{Comm\-Message} msg)
+\item 
+void \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_a7340e62e78c202b91817b2bd50b36f65}{on\-Connect\-Error} (String channel\-Name, int channel)
+\item 
+void \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_a86087238556317477833dba2469ab655}{on\-Connected} (String channel\-Name, int channel)
+\item 
+void \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_ae76d582cf3f4899e532b8be75d9c3802}{on\-Disconnected} (String channel\-Name, int channel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this interface to receive callbacks from this channel.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 122 of file Abstract\-Comm\-Channel.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_a86087238556317477833dba2469ab655}{\index{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}!on\-Connected@{on\-Connected}}
+\index{on\-Connected@{on\-Connected}!com::cellbots::communication::AbstractCommChannel::CommMessageListener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}}
+\subsubsection[{on\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener.\-on\-Connected} (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\-Name, }
+\item[{int}]{channel}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_a86087238556317477833dba2469ab655}
+\hypertarget{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_a7340e62e78c202b91817b2bd50b36f65}{\index{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}!on\-Connect\-Error@{on\-Connect\-Error}}
+\index{on\-Connect\-Error@{on\-Connect\-Error}!com::cellbots::communication::AbstractCommChannel::CommMessageListener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}}
+\subsubsection[{on\-Connect\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener.\-on\-Connect\-Error} (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\-Name, }
+\item[{int}]{channel}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_a7340e62e78c202b91817b2bd50b36f65}
+\hypertarget{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_ae76d582cf3f4899e532b8be75d9c3802}{\index{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}!on\-Disconnected@{on\-Disconnected}}
+\index{on\-Disconnected@{on\-Disconnected}!com::cellbots::communication::AbstractCommChannel::CommMessageListener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}}
+\subsubsection[{on\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener.\-on\-Disconnected} (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\-Name, }
+\item[{int}]{channel}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_ae76d582cf3f4899e532b8be75d9c3802}
+\hypertarget{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_aec6333b51b689d99d873bd8911bf9444}{\index{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}!on\-Message@{on\-Message}}
+\index{on\-Message@{on\-Message}!com::cellbots::communication::AbstractCommChannel::CommMessageListener@{com\-::cellbots\-::communication\-::\-Abstract\-Comm\-Channel\-::\-Comm\-Message\-Listener}}
+\subsubsection[{on\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel.\-Comm\-Message\-Listener.\-on\-Message} (
+\begin{DoxyParamCaption}
+\item[{{\bf Comm\-Message}}]{msg}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener_aec6333b51b689d99d873bd8911bf9444}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/communication/\hyperlink{_abstract_comm_channel_8java}{Abstract\-Comm\-Channel.\-java}\end{DoxyCompactItemize}

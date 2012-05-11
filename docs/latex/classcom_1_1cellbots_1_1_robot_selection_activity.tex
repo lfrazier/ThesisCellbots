@@ -1,0 +1,262 @@
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity}{\section{com.\-cellbots.\-Robot\-Selection\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1_robot_selection_activity}\index{com.\-cellbots.\-Robot\-Selection\-Activity@{com.\-cellbots.\-Robot\-Selection\-Activity}}
+}
+
+
+Inherits List\-Activity.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Selection\-Intents}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a1037c2eb33bfc99a317f6b2e33b6bd55}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_ac19f74203932167c0e502ba4dd342ac6}{on\-Resume} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a6d41283cdbe753eec825aca06e7b212c}{on\-Activity\-Result} (int request\-Code, int result\-Code, Intent data)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a33835d19396cbbfc5bd997224cd97344}{on\-Create\-Options\-Menu} (Menu menu)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a9b49f450988571aba3fc573f4a874b8a}{on\-Options\-Item\-Selected} (Menu\-Item item)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a5424a8ce03ae1aa8c4c5080d629f98d6}{delete\-Entry\-Popup} (final int entry\-Index)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_aa302811ac73fdf13569038288d234b4c}{refresh\-List} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a77640d8e7e99ed85bab8f6932e0ee261}{generate\-Qr\-Uri} (Context ct, \hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} entry)
+\item 
+static Shared\-Preferences \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_ac08722c17c758fe2531152fa256fc450}{get\-Shared\-Preferences} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a04e9a3abfaa019e43d09e1818437d85c}{E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W} = \char`\"{}create\-\_\-now\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a7503e169d09970fb21d02279571f3f43}{E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T} = \char`\"{}edit\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a1684e23b72301c225631f420686e600a}{E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E} = \char`\"{}robo\-\_\-name\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_aa4d96eab5d30aab8c2ca6dc528f6e6ce}{E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E} = \char`\"{}robo\-\_\-type\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a792340fd2c3931524798fd8f0007d8f1}{E\-X\-T\-R\-A\-\_\-\-B\-T} = \char`\"{}robo\-\_\-blue\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a0b8451b5462a3d8f6cf0c3ed566c4d36}{E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N} = \char`\"{}show\-\_\-webonly\char`\"{}
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_af2f0c83cac408a85071d3b95fdea4c6b}{R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L} = 0
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a58905ded45c5c3bffe846f08f7e0131d}{R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E} = 1
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_a048ac1c9abd537fcada0099a739bc591}{R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E} = 2
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1_robot_list}{Robot\-List} \hyperlink{classcom_1_1cellbots_1_1_robot_selection_activity_aa139e03c2f1b7dbda0a16465f8ee76d7}{m\-Robot\-Profiles}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Select the robot that will be used. We determine what it will be used for based on user actions after the robot is selected.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:css@google.com}{\tt css@google.\-com} (Charles Spirakis) 
+\end{DoxyAuthor}
+
+
+Definition at line 56 of file Robot\-Selection\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a5424a8ce03ae1aa8c4c5080d629f98d6}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!delete\-Entry\-Popup@{delete\-Entry\-Popup}}
+\index{delete\-Entry\-Popup@{delete\-Entry\-Popup}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{delete\-Entry\-Popup}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-delete\-Entry\-Popup} (
+\begin{DoxyParamCaption}
+\item[{final int}]{entry\-Index}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a5424a8ce03ae1aa8c4c5080d629f98d6}
+
+
+Definition at line 510 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a77640d8e7e99ed85bab8f6932e0ee261}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!generate\-Qr\-Uri@{generate\-Qr\-Uri}}
+\index{generate\-Qr\-Uri@{generate\-Qr\-Uri}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{generate\-Qr\-Uri}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-generate\-Qr\-Uri} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ct, }
+\item[{{\bf Robot\-Entry}}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a77640d8e7e99ed85bab8f6932e0ee261}
+
+
+Definition at line 633 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_ac08722c17c758fe2531152fa256fc450}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!get\-Shared\-Preferences@{get\-Shared\-Preferences}}
+\index{get\-Shared\-Preferences@{get\-Shared\-Preferences}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{get\-Shared\-Preferences}]{\setlength{\rightskip}{0pt plus 5cm}static Shared\-Preferences {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-get\-Shared\-Preferences} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_ac08722c17c758fe2531152fa256fc450}
+Get the shared preferences so that others can determine global preferences even if they don't have a context or view. To avoid memory leaks, callers should not store the value.
+
+\begin{DoxyReturn}{Returns}
+Shared\-Preferences from a call to Preference\-Manager.\-get\-Default\-Shared\-Preferences() 
+\end{DoxyReturn}
+
+
+Definition at line 654 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a6d41283cdbe753eec825aca06e7b212c}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!on\-Activity\-Result@{on\-Activity\-Result}}
+\index{on\-Activity\-Result@{on\-Activity\-Result}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{on\-Activity\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-on\-Activity\-Result} (
+\begin{DoxyParamCaption}
+\item[{int}]{request\-Code, }
+\item[{int}]{result\-Code, }
+\item[{Intent}]{data}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a6d41283cdbe753eec825aca06e7b212c}
+
+
+Definition at line 152 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a1037c2eb33bfc99a317f6b2e33b6bd55}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a1037c2eb33bfc99a317f6b2e33b6bd55}
+
+
+Definition at line 111 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a33835d19396cbbfc5bd997224cd97344}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!on\-Create\-Options\-Menu@{on\-Create\-Options\-Menu}}
+\index{on\-Create\-Options\-Menu@{on\-Create\-Options\-Menu}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{on\-Create\-Options\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-on\-Create\-Options\-Menu} (
+\begin{DoxyParamCaption}
+\item[{Menu}]{menu}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a33835d19396cbbfc5bd997224cd97344}
+
+
+Definition at line 337 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a9b49f450988571aba3fc573f4a874b8a}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!on\-Options\-Item\-Selected@{on\-Options\-Item\-Selected}}
+\index{on\-Options\-Item\-Selected@{on\-Options\-Item\-Selected}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{on\-Options\-Item\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-on\-Options\-Item\-Selected} (
+\begin{DoxyParamCaption}
+\item[{Menu\-Item}]{item}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a9b49f450988571aba3fc573f4a874b8a}
+
+
+Definition at line 347 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_ac19f74203932167c0e502ba4dd342ac6}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!on\-Resume@{on\-Resume}}
+\index{on\-Resume@{on\-Resume}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{on\-Resume}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-on\-Resume} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_ac19f74203932167c0e502ba4dd342ac6}
+
+
+Definition at line 146 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_aa302811ac73fdf13569038288d234b4c}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!refresh\-List@{refresh\-List}}
+\index{refresh\-List@{refresh\-List}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{refresh\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-refresh\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_aa302811ac73fdf13569038288d234b4c}
+
+
+Definition at line 536 of file Robot\-Selection\-Activity.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a792340fd2c3931524798fd8f0007d8f1}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!E\-X\-T\-R\-A\-\_\-\-B\-T@{E\-X\-T\-R\-A\-\_\-\-B\-T}}
+\index{E\-X\-T\-R\-A\-\_\-\-B\-T@{E\-X\-T\-R\-A\-\_\-\-B\-T}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{E\-X\-T\-R\-A\-\_\-\-B\-T}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-E\-X\-T\-R\-A\-\_\-\-B\-T} = \char`\"{}robo\-\_\-blue\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a792340fd2c3931524798fd8f0007d8f1}
+
+
+Definition at line 69 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a04e9a3abfaa019e43d09e1818437d85c}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W@{E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W}}
+\index{E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W@{E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-E\-X\-T\-R\-A\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-N\-O\-W} = \char`\"{}create\-\_\-now\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a04e9a3abfaa019e43d09e1818437d85c}
+
+
+Definition at line 61 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a7503e169d09970fb21d02279571f3f43}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T@{E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T}}
+\index{E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T@{E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-E\-X\-T\-R\-A\-\_\-\-E\-D\-I\-T} = \char`\"{}edit\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a7503e169d09970fb21d02279571f3f43}
+
+
+Definition at line 63 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a1684e23b72301c225631f420686e600a}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E@{E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E}}
+\index{E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E@{E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-E\-X\-T\-R\-A\-\_\-\-N\-A\-M\-E} = \char`\"{}robo\-\_\-name\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a1684e23b72301c225631f420686e600a}
+
+
+Definition at line 65 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a0b8451b5462a3d8f6cf0c3ed566c4d36}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N@{E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N}}
+\index{E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N@{E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-E\-X\-T\-R\-A\-\_\-\-S\-H\-O\-W\-\_\-\-W\-E\-B\-O\-N\-L\-Y\-\_\-\-B\-U\-T\-T\-O\-N} = \char`\"{}show\-\_\-webonly\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a0b8451b5462a3d8f6cf0c3ed566c4d36}
+
+
+Definition at line 71 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_aa4d96eab5d30aab8c2ca6dc528f6e6ce}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E@{E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E}}
+\index{E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E@{E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-E\-X\-T\-R\-A\-\_\-\-T\-Y\-P\-E} = \char`\"{}robo\-\_\-type\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_aa4d96eab5d30aab8c2ca6dc528f6e6ce}
+
+
+Definition at line 67 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_aa139e03c2f1b7dbda0a16465f8ee76d7}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!m\-Robot\-Profiles@{m\-Robot\-Profiles}}
+\index{m\-Robot\-Profiles@{m\-Robot\-Profiles}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{m\-Robot\-Profiles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-List} {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-m\-Robot\-Profiles}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_aa139e03c2f1b7dbda0a16465f8ee76d7}
+
+
+Definition at line 90 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_af2f0c83cac408a85071d3b95fdea4c6b}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L@{R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L}}
+\index{R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L@{R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-R\-E\-S\-U\-L\-T\-\_\-\-C\-A\-N\-C\-E\-L} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_af2f0c83cac408a85071d3b95fdea4c6b}
+
+
+Definition at line 74 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a58905ded45c5c3bffe846f08f7e0131d}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E@{R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E}}
+\index{R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E@{R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-R\-E\-S\-U\-L\-T\-\_\-\-S\-A\-V\-E} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a58905ded45c5c3bffe846f08f7e0131d}
+
+
+Definition at line 76 of file Robot\-Selection\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_selection_activity_a048ac1c9abd537fcada0099a739bc591}{\index{com\-::cellbots\-::\-Robot\-Selection\-Activity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}!R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E@{R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E}}
+\index{R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E@{R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E}!com::cellbots::RobotSelectionActivity@{com\-::cellbots\-::\-Robot\-Selection\-Activity}}
+\subsubsection[{R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-Robot\-Selection\-Activity.\-R\-E\-S\-U\-L\-T\-\_\-\-S\-T\-A\-R\-T\-\_\-\-W\-E\-B\-\_\-\-C\-R\-E\-A\-T\-E} = 2\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_selection_activity_a048ac1c9abd537fcada0099a739bc591}
+
+
+Definition at line 78 of file Robot\-Selection\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/\hyperlink{_robot_selection_activity_8java}{Robot\-Selection\-Activity.\-java}\end{DoxyCompactItemize}

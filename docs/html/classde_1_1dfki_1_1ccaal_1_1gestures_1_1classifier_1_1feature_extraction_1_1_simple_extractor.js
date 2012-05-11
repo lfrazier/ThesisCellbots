@@ -1,0 +1,4 @@
+var classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_simple_extractor =
+[
+    [ "sampleSignal", "classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_simple_extractor.html#a06767ede6f5b3393a6ce4a54934cb580", null ]
+];

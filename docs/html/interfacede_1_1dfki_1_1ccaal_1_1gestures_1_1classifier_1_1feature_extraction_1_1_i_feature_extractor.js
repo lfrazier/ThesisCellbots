@@ -1,0 +1,4 @@
+var interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_i_feature_extractor =
+[
+    [ "sampleSignal", "interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_i_feature_extractor.html#a53d467bc0aa6dda71eb5c3c8418a71b0", null ]
+];

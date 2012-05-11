@@ -1,0 +1,4 @@
+var classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_normed_grid_extractor =
+[
+    [ "sampleSignal", "classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction_1_1_normed_grid_extractor.html#aa7b3f8819597b9f006c08a0baeb39a90", null ]
+];

@@ -1,0 +1,26 @@
+var namespaces =
+[
+    [ "bdi", "namespacebdi.html", null ],
+    [ "bdi.upenn", "namespacebdi_1_1upenn.html", null ],
+    [ "bdi.upenn.android", "namespacebdi_1_1upenn_1_1android.html", "namespacebdi_1_1upenn_1_1android" ],
+    [ "com", "namespacecom.html", null ],
+    [ "com.cellbots", "namespacecom_1_1cellbots.html", "namespacecom_1_1cellbots" ],
+    [ "com.cellbots.communication", "namespacecom_1_1cellbots_1_1communication.html", "namespacecom_1_1cellbots_1_1communication" ],
+    [ "com.cellbots.directcontrol", "namespacecom_1_1cellbots_1_1directcontrol.html", "namespacecom_1_1cellbots_1_1directcontrol" ],
+    [ "com.cellbots.eyes", "namespacecom_1_1cellbots_1_1eyes.html", "namespacecom_1_1cellbots_1_1eyes" ],
+    [ "com.cellbots.httpserver", "namespacecom_1_1cellbots_1_1httpserver.html", "namespacecom_1_1cellbots_1_1httpserver" ],
+    [ "com.cellbots.local", "namespacecom_1_1cellbots_1_1local.html", "namespacecom_1_1cellbots_1_1local" ],
+    [ "com.cellbots.local.robotcontrollerservice", "namespacecom_1_1cellbots_1_1local_1_1robotcontrollerservice.html", "namespacecom_1_1cellbots_1_1local_1_1robotcontrollerservice" ],
+    [ "com.cellbots.personas", "namespacecom_1_1cellbots_1_1personas.html", "namespacecom_1_1cellbots_1_1personas" ],
+    [ "com.cellbots.remote", "namespacecom_1_1cellbots_1_1remote.html", "namespacecom_1_1cellbots_1_1remote" ],
+    [ "com.googlecode", "namespacecom_1_1googlecode.html", null ],
+    [ "com.googlecode.eyesfree", "namespacecom_1_1googlecode_1_1eyesfree.html", null ],
+    [ "com.googlecode.eyesfree.voicecontrol", "namespacecom_1_1googlecode_1_1eyesfree_1_1voicecontrol.html", "namespacecom_1_1googlecode_1_1eyesfree_1_1voicecontrol" ],
+    [ "de", "namespacede.html", null ],
+    [ "de.dfki", "namespacede_1_1dfki.html", null ],
+    [ "de.dfki.ccaal", "namespacede_1_1dfki_1_1ccaal.html", null ],
+    [ "de.dfki.ccaal.gestures", "namespacede_1_1dfki_1_1ccaal_1_1gestures.html", "namespacede_1_1dfki_1_1ccaal_1_1gestures" ],
+    [ "de.dfki.ccaal.gestures.classifier", "namespacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier.html", "namespacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier" ],
+    [ "de.dfki.ccaal.gestures.classifier.featureExtraction", "namespacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction.html", "namespacede_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1feature_extraction" ],
+    [ "de.dfki.ccaal.gestures.recorder", "namespacede_1_1dfki_1_1ccaal_1_1gestures_1_1recorder.html", "namespacede_1_1dfki_1_1ccaal_1_1gestures_1_1recorder" ]
+];

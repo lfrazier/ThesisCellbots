@@ -1,0 +1,148 @@
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity}{\section{com.\-cellbots.\-eyes.\-Eyes\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity}\index{com.\-cellbots.\-eyes.\-Eyes\-Activity@{com.\-cellbots.\-eyes.\-Eyes\-Activity}}
+}
+
+
+Inherits Activity, and Callback.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_abce360dee7f83e0556a6587e0a20a404}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a50ba777eb98f4c4970a77e87ab2e0569}{on\-Destroy} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_acb9b8174f0c341cd8e186bbf986c5823}{surface\-Created} (Surface\-Holder holder)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a1b2463226def7e52e9e58cc01989a609}{surface\-Destroyed} (Surface\-Holder holder)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a4c7437b966b770d236aa101566e95616}{surface\-Changed} (Surface\-Holder holder, int format, int w, int h)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a42ad2a0e119de77ed2834bad1d9e746e}{on\-Create\-Options\-Menu} (Menu menu)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a8f50733dcdff98d0ab463a2488711eee}{on\-Options\-Item\-Selected} (Menu\-Item item)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_aa7c42c706a15ffa9dbe0dfa96c199e83}{T\-A\-G} = \char`\"{}Eyes\-Activity\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a1d6fc1d1f299d752777590a0a13c3f70}{E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D} = \char`\"{}android.\-intent.\-action.\-E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Remote eyes turns your Android device into a wireless web cam. With Froyo's camera enhancements (ability to manage the preview memory buffer + access to Skia for quickly converting from Y\-U\-V to J\-P\-G), it is possible to capture and upload preview frames fast enough for it to look like video. The behavior is that a new frame will not be captured and processed until the previous frame has been processed and uploaded. This means that if the connection slows down, the video may have brief stutters, but it won't fall behind. See put.\-php for a simple, working example of what is running server side. Once you have put.\-php uploaded to your server, be sure to remember to update \char`\"{}put\-Url\char`\"{}, \char`\"{}server\char`\"{}, and \char`\"{}port\char`\"{} in the Remote Eyes code to match your server instead of \char`\"{}myexampleserver.\-com\char`\"{}. See remote\-\_\-eyes.\-html for the client H\-T\-M\-L page that can be used to see what Remote Eyes is seeing.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clchen@google.com}{\tt clchen@google.\-com} (Charles L. Chen) 
+\end{DoxyAuthor}
+
+
+Definition at line 88 of file Eyes\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_abce360dee7f83e0556a6587e0a20a404}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_abce360dee7f83e0556a6587e0a20a404}
+Called when the activity is first created. 
+
+Definition at line 136 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a42ad2a0e119de77ed2834bad1d9e746e}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!on\-Create\-Options\-Menu@{on\-Create\-Options\-Menu}}
+\index{on\-Create\-Options\-Menu@{on\-Create\-Options\-Menu}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{on\-Create\-Options\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-on\-Create\-Options\-Menu} (
+\begin{DoxyParamCaption}
+\item[{Menu}]{menu}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a42ad2a0e119de77ed2834bad1d9e746e}
+
+
+Definition at line 463 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a50ba777eb98f4c4970a77e87ab2e0569}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!on\-Destroy@{on\-Destroy}}
+\index{on\-Destroy@{on\-Destroy}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{on\-Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-on\-Destroy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a50ba777eb98f4c4970a77e87ab2e0569}
+
+
+Definition at line 215 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a8f50733dcdff98d0ab463a2488711eee}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!on\-Options\-Item\-Selected@{on\-Options\-Item\-Selected}}
+\index{on\-Options\-Item\-Selected@{on\-Options\-Item\-Selected}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{on\-Options\-Item\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-on\-Options\-Item\-Selected} (
+\begin{DoxyParamCaption}
+\item[{Menu\-Item}]{item}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a8f50733dcdff98d0ab463a2488711eee}
+
+
+Definition at line 470 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a4c7437b966b770d236aa101566e95616}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!surface\-Changed@{surface\-Changed}}
+\index{surface\-Changed@{surface\-Changed}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{surface\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-surface\-Changed} (
+\begin{DoxyParamCaption}
+\item[{Surface\-Holder}]{holder, }
+\item[{int}]{format, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a4c7437b966b770d236aa101566e95616}
+
+
+Definition at line 265 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_acb9b8174f0c341cd8e186bbf986c5823}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!surface\-Created@{surface\-Created}}
+\index{surface\-Created@{surface\-Created}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{surface\-Created}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-surface\-Created} (
+\begin{DoxyParamCaption}
+\item[{Surface\-Holder}]{holder}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_acb9b8174f0c341cd8e186bbf986c5823}
+
+
+Definition at line 239 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a1b2463226def7e52e9e58cc01989a609}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!surface\-Destroyed@{surface\-Destroyed}}
+\index{surface\-Destroyed@{surface\-Destroyed}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{surface\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-surface\-Destroyed} (
+\begin{DoxyParamCaption}
+\item[{Surface\-Holder}]{holder}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a1b2463226def7e52e9e58cc01989a609}
+
+
+Definition at line 248 of file Eyes\-Activity.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a1d6fc1d1f299d752777590a0a13c3f70}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D@{E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D}}
+\index{E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D@{E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D} = \char`\"{}android.\-intent.\-action.\-E\-Y\-E\-S\-\_\-\-C\-O\-M\-M\-A\-N\-D\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_a1d6fc1d1f299d752777590a0a13c3f70}
+
+
+Definition at line 92 of file Eyes\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_aa7c42c706a15ffa9dbe0dfa96c199e83}{\index{com\-::cellbots\-::eyes\-::\-Eyes\-Activity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}!T\-A\-G@{T\-A\-G}}
+\index{T\-A\-G@{T\-A\-G}!com::cellbots::eyes::EyesActivity@{com\-::cellbots\-::eyes\-::\-Eyes\-Activity}}
+\subsubsection[{T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-eyes.\-Eyes\-Activity.\-T\-A\-G} = \char`\"{}Eyes\-Activity\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1eyes_1_1_eyes_activity_aa7c42c706a15ffa9dbe0dfa96c199e83}
+
+
+Definition at line 90 of file Eyes\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/eyes/\hyperlink{_eyes_activity_8java}{Eyes\-Activity.\-java}\end{DoxyCompactItemize}

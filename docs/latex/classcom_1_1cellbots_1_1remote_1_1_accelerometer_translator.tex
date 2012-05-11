@@ -1,0 +1,127 @@
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator}{\section{com.\-cellbots.\-remote.\-Accelerometer\-Translator Class Reference}
+\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator}\index{com.\-cellbots.\-remote.\-Accelerometer\-Translator@{com.\-cellbots.\-remote.\-Accelerometer\-Translator}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Sensor\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a4f5c735bdf53b25e77b3a2d9fff0cc62}{Accelerometer\-Translator} (Context ct, \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener}{Ui\-Event\-Listener} ui\-Listener, long max\-Rate\-Ms)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a83312a865f4355979f035994bca9871b}{stop} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a8df167847090a980b9241b2742f6bc3b}{movement} (Sensor\-Data current\-Values)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a6d9cccb57457ca1d65810ebc4e11762d}{set\-Baseline} (Sensor\-Data initial)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a1bde37552a9cb4a67e84162ea171dab0}{convert\-Radians\-To\-Speed} (double angle\-Radians)
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a65a9273b907c6927bb585533054ae71c}{convert\-Radians\-To\-Turn} (double angle\-Radians, boolean go\-Forward)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle the translation from accelerometer sensing to actual robot movement.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:css@google.com}{\tt css@google.\-com} (Charles Spirakis) 
+\end{DoxyAuthor}
+
+
+Definition at line 30 of file Accelerometer\-Translator.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a4f5c735bdf53b25e77b3a2d9fff0cc62}{\index{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}!Accelerometer\-Translator@{Accelerometer\-Translator}}
+\index{Accelerometer\-Translator@{Accelerometer\-Translator}!com::cellbots::remote::AccelerometerTranslator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}}
+\subsubsection[{Accelerometer\-Translator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-remote.\-Accelerometer\-Translator.\-Accelerometer\-Translator} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ct, }
+\item[{{\bf Ui\-Event\-Listener}}]{ui\-Listener, }
+\item[{long}]{max\-Rate\-Ms}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a4f5c735bdf53b25e77b3a2d9fff0cc62}
+
+
+Definition at line 86 of file Accelerometer\-Translator.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a1bde37552a9cb4a67e84162ea171dab0}{\index{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}!convert\-Radians\-To\-Speed@{convert\-Radians\-To\-Speed}}
+\index{convert\-Radians\-To\-Speed@{convert\-Radians\-To\-Speed}!com::cellbots::remote::AccelerometerTranslator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}}
+\subsubsection[{convert\-Radians\-To\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-remote.\-Accelerometer\-Translator.\-convert\-Radians\-To\-Speed} (
+\begin{DoxyParamCaption}
+\item[{double}]{angle\-Radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a1bde37552a9cb4a67e84162ea171dab0}
+
+
+Definition at line 270 of file Accelerometer\-Translator.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a65a9273b907c6927bb585533054ae71c}{\index{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}!convert\-Radians\-To\-Turn@{convert\-Radians\-To\-Turn}}
+\index{convert\-Radians\-To\-Turn@{convert\-Radians\-To\-Turn}!com::cellbots::remote::AccelerometerTranslator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}}
+\subsubsection[{convert\-Radians\-To\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-remote.\-Accelerometer\-Translator.\-convert\-Radians\-To\-Turn} (
+\begin{DoxyParamCaption}
+\item[{double}]{angle\-Radians, }
+\item[{boolean}]{go\-Forward}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a65a9273b907c6927bb585533054ae71c}
+
+
+Definition at line 311 of file Accelerometer\-Translator.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a8df167847090a980b9241b2742f6bc3b}{\index{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}!movement@{movement}}
+\index{movement@{movement}!com::cellbots::remote::AccelerometerTranslator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}}
+\subsubsection[{movement}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Accelerometer\-Translator.\-movement} (
+\begin{DoxyParamCaption}
+\item[{Sensor\-Data}]{current\-Values}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a8df167847090a980b9241b2742f6bc3b}
+Translate movement of the phone into movement of the robot. Currently we compute the instantaneous speed the of the device (in millimeters/second) based on the last two accelerometer values. If the absolute speed is below a threshold, then the assumption is that the accelerometer is mostly measuring values relative to gravity and we can treat the accelerometer values as an indication of rotation. If we integrated the speed over time, we could (in theory) determine relative position from the starting location and that may be interesting for some form of robot control (vs. using orientation). This would also (in theory) allow for 3-\/d control (moving the device up relative to the original location would translate into an up command to the robot). In this case, the orientation of the phone may not be relevant (only care about 3-\/d position for control) or it could indicate roll/pitch to the device. But that is something for later...
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Values} & The current accelerometer readings. \\
+\hline
+\end{DoxyParams}
+As long as the phone display is facing up, the atan X\-Z and atan Y\-Z values correspond to orientation's roll and pitch. Once the phone display is upside down (and the z accelerometer value becomes negative), the X\-Z/\-Y\-Z and roll/pitch values differ. There is a break that happens when z becomes negative. The code above blocks that out, so we only need to deal with values from -\/90 to 0 to 90 (as values above 90 means the phone is at least partially upside down).
+
+The difference between the two angles. If the pitch is increasing, that means speed the robot up. If the pitch is decreasing, that means slow the robot down. A positive pitch means the robot should be moving forward and a negative pitch means the robot should move backwards. If the roll is increasing, that means speed up the robots turn to the right (aka slow the robots turn to the left). If the roll is decreasing, that means slow the robots turn to the left (aka speed up the robots turn to the right). For roll 0 should indicate straight movement and negative values should indicate some form of left turn while positive roll values should indicate some form of right turn.
+
+Definition at line 118 of file Accelerometer\-Translator.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a6d9cccb57457ca1d65810ebc4e11762d}{\index{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}!set\-Baseline@{set\-Baseline}}
+\index{set\-Baseline@{set\-Baseline}!com::cellbots::remote::AccelerometerTranslator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}}
+\subsubsection[{set\-Baseline}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Accelerometer\-Translator.\-set\-Baseline} (
+\begin{DoxyParamCaption}
+\item[{Sensor\-Data}]{initial}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a6d9cccb57457ca1d65810ebc4e11762d}
+
+
+Definition at line 246 of file Accelerometer\-Translator.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a83312a865f4355979f035994bca9871b}{\index{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}!stop@{stop}}
+\index{stop@{stop}!com::cellbots::remote::AccelerometerTranslator@{com\-::cellbots\-::remote\-::\-Accelerometer\-Translator}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Accelerometer\-Translator.\-stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_accelerometer_translator_a83312a865f4355979f035994bca9871b}
+
+
+Definition at line 95 of file Accelerometer\-Translator.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/remote/\hyperlink{_accelerometer_translator_8java}{Accelerometer\-Translator.\-java}\end{DoxyCompactItemize}

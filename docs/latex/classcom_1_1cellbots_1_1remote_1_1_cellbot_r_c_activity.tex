@@ -1,0 +1,321 @@
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity}{\section{com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity}\index{com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity@{com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity}}
+}
+Inheritance diagram for com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a5a9a282b946f9d4444aee45a475ea4f6}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ab1df8db7d9cf46c4429c6894de95b744}{on\-Destroy} ()
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ab7f67cfd2cbe168b6d697e141b1f2344}{on\-Create\-Options\-Menu} (Menu menu)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a47c735fb6e31001123f446b4ba413a72}{on\-Options\-Item\-Selected} (Menu\-Item item)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a1717a7d5b7f431f75bce424eefdc9a7f}{switch\-To\-Accelerometer\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a1c453007e262cee9de60f509cf97276a}{switch\-To\-Dpad\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_af02ee12e63e6f4e6470d1cb1098a2e13}{switch\-To\-Voice\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a938babf1d3267369a06ea3c2f1d09c27}{switch\-To\-Joystick\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_aee80f644f44df7124d4d08cf8a18a4c5}{switch\-To\-Wave\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a29126d7feff45de148ec68acfbc8367b}{on\-Wheel\-Velocity\-Set\-Requested} (float direction, float speed)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a68edabcee448f7ffc6c8456ad7b9ee6e}{on\-Stop\-Requested} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a03122cf1acabbbfa1450deafc4fb409f}{on\-Action\-Requested} (int action, String values)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a43e68442620e59e6827a966ae244abdb}{on\-Switch\-Interface\-Requested} (int interface\-Id)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a0e1358225117cf7f22d0e503842de0ec}{on\-Popup\-Window\-Requested} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a6977935c975ca9d83596806b2b3e474c}{state} = 0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a4f41df11fc7e72266c02d4eab0eba2dd}{T\-A\-G} = \char`\"{}Cellbot Remote Control\char`\"{}
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ac09782bdc4e6c867e06b09d79e1c9035}{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E} = 42
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1_robot_list}{Robot\-List} \hyperlink{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a58f38f2aab8f4cdcdd29809d6c9147c3}{m\-Robot\-Profiles}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A remote control for driving Cellbots. The remote control talks to the cellbot's Android over xmpp using Google Talk accounts. The cellbot Android is able to share a video stream using a known shared location with Remote Eyes. X\-M\-P\-P code based on example from\-: \href{http://credentiality2.blogspot.com/2010}{\tt http\-://credentiality2.\-blogspot.\-com/2010} /03/xmpp-\/asmack-\/android-\/google-\/talk.html
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clchen@google.com}{\tt clchen@google.\-com} (Charles L. Chen) 
+
+\href{mailto:keertip@google.com}{\tt keertip@google.\-com} (Keerti Parthasarathy) 
+
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 77 of file Cellbot\-R\-C\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a03122cf1acabbbfa1450deafc4fb409f}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Action\-Requested@{on\-Action\-Requested}}
+\index{on\-Action\-Requested@{on\-Action\-Requested}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Action\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Action\-Requested} (
+\begin{DoxyParamCaption}
+\item[{int}]{action, }
+\item[{String}]{values}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a03122cf1acabbbfa1450deafc4fb409f}
+Causes the robot to take an action as defined by the A\-C\-T\-I\-O\-N\-\_\-\-X\-X\-X values above. Currently the only string value allowed is the text for the A\-C\-T\-I\-O\-N\-\_\-\-S\-P\-E\-A\-K. There are plans in the future to allow for the options to the movement commands. T\-O\-D\-O(css)\-: Change this to the public document U\-R\-L when it is available since this code is intended to be open sourced.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://docs.google.com/a/google.com/document/d/1}{\tt https\-://docs.\-google.\-com/a/google.\-com/document/d/1} Kl11k3\-Y\-O9\-Bsmo\-R\-I\-Y4\-J\-Ej\-Z\-Zo\-Z\-X0\-Bd\-Yy\-\_\-3\-A\-H\-C1\-Gy\-V\-Nu\-Q\-Q/edit\# 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em action} & An A\-C\-T\-I\-O\-N\-\_\-\-X\-X\-X value \\
+\hline
+{\em values} & Value to pass along to the action. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_af7320a4f9037c74ed1f4f912e8d2caac}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 500 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a5a9a282b946f9d4444aee45a475ea4f6}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a5a9a282b946f9d4444aee45a475ea4f6}
+Called when the activity is first created. How the robot wants to communicate via the web is stored in the robot entry. We use a hierarchical determination based on which field have values and which don't. This hierarchy should match the one for remote creation.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcom_1_1cellbots_1_1_robot_create_web_remote_activity}{Robot\-Create\-Web\-Remote\-Activity}
+\end{DoxySeeAlso}
+
+
+Definition at line 197 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ab7f67cfd2cbe168b6d697e141b1f2344}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Create\-Options\-Menu@{on\-Create\-Options\-Menu}}
+\index{on\-Create\-Options\-Menu@{on\-Create\-Options\-Menu}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Create\-Options\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Create\-Options\-Menu} (
+\begin{DoxyParamCaption}
+\item[{Menu}]{menu}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ab7f67cfd2cbe168b6d697e141b1f2344}
+
+
+Definition at line 384 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ab1df8db7d9cf46c4429c6894de95b744}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Destroy@{on\-Destroy}}
+\index{on\-Destroy@{on\-Destroy}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Destroy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ab1df8db7d9cf46c4429c6894de95b744}
+
+
+Definition at line 344 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a47c735fb6e31001123f446b4ba413a72}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Options\-Item\-Selected@{on\-Options\-Item\-Selected}}
+\index{on\-Options\-Item\-Selected@{on\-Options\-Item\-Selected}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Options\-Item\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Options\-Item\-Selected} (
+\begin{DoxyParamCaption}
+\item[{Menu\-Item}]{item}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a47c735fb6e31001123f446b4ba413a72}
+
+
+Definition at line 392 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a0e1358225117cf7f22d0e503842de0ec}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Popup\-Window\-Requested@{on\-Popup\-Window\-Requested}}
+\index{on\-Popup\-Window\-Requested@{on\-Popup\-Window\-Requested}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Popup\-Window\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Popup\-Window\-Requested} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a0e1358225117cf7f22d0e503842de0ec}
+Request to show a popup window 
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a83e7a945fb951b90b2f58fb3807a02bb}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 597 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a68edabcee448f7ffc6c8456ad7b9ee6e}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Stop\-Requested@{on\-Stop\-Requested}}
+\index{on\-Stop\-Requested@{on\-Stop\-Requested}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Stop\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Stop\-Requested} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a68edabcee448f7ffc6c8456ad7b9ee6e}
+Causes the robot to stop moving. 
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_aa32f78f97e959fe7212b0ce4db2cd616}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 495 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a43e68442620e59e6827a966ae244abdb}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Switch\-Interface\-Requested@{on\-Switch\-Interface\-Requested}}
+\index{on\-Switch\-Interface\-Requested@{on\-Switch\-Interface\-Requested}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Switch\-Interface\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Switch\-Interface\-Requested} (
+\begin{DoxyParamCaption}
+\item[{int}]{interface\-Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a43e68442620e59e6827a966ae244abdb}
+Request to switch to a different interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interface\-Id} & The I\-D of the interface to switch to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a5e14db43eb3e72683b42d08bf4222741}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 575 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a29126d7feff45de148ec68acfbc8367b}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!on\-Wheel\-Velocity\-Set\-Requested@{on\-Wheel\-Velocity\-Set\-Requested}}
+\index{on\-Wheel\-Velocity\-Set\-Requested@{on\-Wheel\-Velocity\-Set\-Requested}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{on\-Wheel\-Velocity\-Set\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-on\-Wheel\-Velocity\-Set\-Requested} (
+\begin{DoxyParamCaption}
+\item[{float}]{direction, }
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a29126d7feff45de148ec68acfbc8367b}
+Send a wheel velocity command to a robot based on the requested direction and speed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & valid values are -\/180 to +180 where\-: -\/180 to 0 means left 0 to +180 means right \\
+\hline
+{\em speed} & valid values are 0-\/100 which is a percentage of the robots speed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a7912ec147aa882d7c0bf6b8a229ddfd9}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 477 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a1717a7d5b7f431f75bce424eefdc9a7f}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!switch\-To\-Accelerometer\-Control@{switch\-To\-Accelerometer\-Control}}
+\index{switch\-To\-Accelerometer\-Control@{switch\-To\-Accelerometer\-Control}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{switch\-To\-Accelerometer\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-switch\-To\-Accelerometer\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a1717a7d5b7f431f75bce424eefdc9a7f}
+
+
+Definition at line 405 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a1c453007e262cee9de60f509cf97276a}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!switch\-To\-Dpad\-Control@{switch\-To\-Dpad\-Control}}
+\index{switch\-To\-Dpad\-Control@{switch\-To\-Dpad\-Control}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{switch\-To\-Dpad\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-switch\-To\-Dpad\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a1c453007e262cee9de60f509cf97276a}
+
+
+Definition at line 414 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a938babf1d3267369a06ea3c2f1d09c27}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!switch\-To\-Joystick\-Control@{switch\-To\-Joystick\-Control}}
+\index{switch\-To\-Joystick\-Control@{switch\-To\-Joystick\-Control}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{switch\-To\-Joystick\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-switch\-To\-Joystick\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a938babf1d3267369a06ea3c2f1d09c27}
+
+
+Definition at line 432 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_af02ee12e63e6f4e6470d1cb1098a2e13}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!switch\-To\-Voice\-Control@{switch\-To\-Voice\-Control}}
+\index{switch\-To\-Voice\-Control@{switch\-To\-Voice\-Control}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{switch\-To\-Voice\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-switch\-To\-Voice\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_af02ee12e63e6f4e6470d1cb1098a2e13}
+
+
+Definition at line 423 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_aee80f644f44df7124d4d08cf8a18a4c5}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!switch\-To\-Wave\-Control@{switch\-To\-Wave\-Control}}
+\index{switch\-To\-Wave\-Control@{switch\-To\-Wave\-Control}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{switch\-To\-Wave\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-switch\-To\-Wave\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_aee80f644f44df7124d4d08cf8a18a4c5}
+
+
+Definition at line 445 of file Cellbot\-R\-C\-Activity.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a58f38f2aab8f4cdcdd29809d6c9147c3}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!m\-Robot\-Profiles@{m\-Robot\-Profiles}}
+\index{m\-Robot\-Profiles@{m\-Robot\-Profiles}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{m\-Robot\-Profiles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-List} {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-m\-Robot\-Profiles}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a58f38f2aab8f4cdcdd29809d6c9147c3}
+
+
+Definition at line 86 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a6977935c975ca9d83596806b2b3e474c}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!state@{state}}
+\index{state@{state}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-state} = 0}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a6977935c975ca9d83596806b2b3e474c}
+
+
+Definition at line 108 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a4f41df11fc7e72266c02d4eab0eba2dd}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!T\-A\-G@{T\-A\-G}}
+\index{T\-A\-G@{T\-A\-G}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-T\-A\-G} = \char`\"{}Cellbot Remote Control\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_a4f41df11fc7e72266c02d4eab0eba2dd}
+
+
+Definition at line 80 of file Cellbot\-R\-C\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ac09782bdc4e6c867e06b09d79e1c9035}{\index{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}!V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E@{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E}}
+\index{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E@{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E}!com::cellbots::remote::CellbotRCActivity@{com\-::cellbots\-::remote\-::\-Cellbot\-R\-C\-Activity}}
+\subsubsection[{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-remote.\-Cellbot\-R\-C\-Activity.\-V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E} = 42\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity_ac09782bdc4e6c867e06b09d79e1c9035}
+
+
+Definition at line 84 of file Cellbot\-R\-C\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/remote/\hyperlink{_cellbot_r_c_activity_8java}{Cellbot\-R\-C\-Activity.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classcom_1_1cellbots_1_1_robot_list}{\section{com.\-cellbots.\-Robot\-List Class Reference}
+\label{classcom_1_1cellbots_1_1_robot_list}\index{com.\-cellbots.\-Robot\-List@{com.\-cellbots.\-Robot\-List}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1_robot_list_aee080eedc3939cb26652d41bbcf229e5}{Robot\-List} (Shared\-Preferences prefs)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1_robot_list_a8a8c5b8ea27122769fbe3bcb69daf373}{add\-Entry} (\hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} entry)
+\item 
+boolean \hyperlink{classcom_1_1cellbots_1_1_robot_list_ab48f1874b746b6d598e6c1a811fee6ee}{replace\-Entry} (int index, \hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} entry)
+\item 
+\hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} \hyperlink{classcom_1_1cellbots_1_1_robot_list_a9e418afce5a1cfbac4c2f4adf208814e}{get\-Entry} (int index)
+\item 
+\hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} \hyperlink{classcom_1_1cellbots_1_1_robot_list_a3291b77dd4d0a88a691af38b3fcc112a}{remove} (int index)
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1_robot_list_af4014b29124e131423545b0c73ec46ec}{find\-Index\-By\-Name} (String name)
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1_robot_list_a55d48d7518537d39ee738a3420f7df84}{size} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_list_a366f580930417def6861553eddc4baa2}{load} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_list_a9ba2958404fbf876ffd05fdb6853d0aa}{save} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data model for a list of robot entries, a selected entry, and a pending entry to be added. Also includes utility methods for launching Q\-R scanner and applying result to selected robot (probably not the best place for this).
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:ptucker@google.com}{\tt ptucker@google.\-com} (Philip Tucker) 
+\end{DoxyAuthor}
+
+
+Definition at line 31 of file Robot\-List.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_aee080eedc3939cb26652d41bbcf229e5}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!Robot\-List@{Robot\-List}}
+\index{Robot\-List@{Robot\-List}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{Robot\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-Robot\-List.\-Robot\-List} (
+\begin{DoxyParamCaption}
+\item[{Shared\-Preferences}]{prefs}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_aee080eedc3939cb26652d41bbcf229e5}
+
+
+Definition at line 36 of file Robot\-List.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_a8a8c5b8ea27122769fbe3bcb69daf373}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!add\-Entry@{add\-Entry}}
+\index{add\-Entry@{add\-Entry}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{add\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-Robot\-List.\-add\-Entry} (
+\begin{DoxyParamCaption}
+\item[{{\bf Robot\-Entry}}]{entry}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_a8a8c5b8ea27122769fbe3bcb69daf373}
+Add an entry if it doesn't already exist based on the name. If it does exist, update the entry that is there instead. There are no guarantees that the order of the \hyperlink{classcom_1_1cellbots_1_1_robot_list}{Robot\-List} is maintained (i.\-e. don't hold onto an index and assume the index will never change between calls to add/remote methods).
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & The entry to be added/updated. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_af4014b29124e131423545b0c73ec46ec}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!find\-Index\-By\-Name@{find\-Index\-By\-Name}}
+\index{find\-Index\-By\-Name@{find\-Index\-By\-Name}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{find\-Index\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-Robot\-List.\-find\-Index\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_af4014b29124e131423545b0c73ec46ec}
+Find the robot entry that matches the given name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If there is a match, return the index of the \hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry}. If there is not a match, return -\/1 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_a9e418afce5a1cfbac4c2f4adf208814e}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!get\-Entry@{get\-Entry}}
+\index{get\-Entry@{get\-Entry}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{get\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-Entry} {\bf com.\-cellbots.\-Robot\-List.\-get\-Entry} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_a9e418afce5a1cfbac4c2f4adf208814e}
+
+
+Definition at line 71 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_a366f580930417def6861553eddc4baa2}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!load@{load}}
+\index{load@{load}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-List.\-load} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_a366f580930417def6861553eddc4baa2}
+
+
+Definition at line 100 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_a3291b77dd4d0a88a691af38b3fcc112a}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!remove@{remove}}
+\index{remove@{remove}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-Entry} {\bf com.\-cellbots.\-Robot\-List.\-remove} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_a3291b77dd4d0a88a691af38b3fcc112a}
+
+
+Definition at line 75 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_ab48f1874b746b6d598e6c1a811fee6ee}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!replace\-Entry@{replace\-Entry}}
+\index{replace\-Entry@{replace\-Entry}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{replace\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf com.\-cellbots.\-Robot\-List.\-replace\-Entry} (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf Robot\-Entry}}]{entry}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_ab48f1874b746b6d598e6c1a811fee6ee}
+
+
+Definition at line 60 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_a9ba2958404fbf876ffd05fdb6853d0aa}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!save@{save}}
+\index{save@{save}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-List.\-save} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_a9ba2958404fbf876ffd05fdb6853d0aa}
+
+
+Definition at line 112 of file Robot\-List.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_list_a55d48d7518537d39ee738a3420f7df84}{\index{com\-::cellbots\-::\-Robot\-List@{com\-::cellbots\-::\-Robot\-List}!size@{size}}
+\index{size@{size}!com::cellbots::RobotList@{com\-::cellbots\-::\-Robot\-List}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-Robot\-List.\-size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_list_a55d48d7518537d39ee738a3420f7df84}
+
+
+Definition at line 96 of file Robot\-List.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/\hyperlink{_robot_list_8java}{Robot\-List.\-java}\end{DoxyCompactItemize}

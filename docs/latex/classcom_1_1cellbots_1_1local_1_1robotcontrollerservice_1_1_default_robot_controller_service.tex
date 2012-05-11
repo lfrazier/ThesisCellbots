@@ -1,0 +1,75 @@
+\hypertarget{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service}{\section{com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service Class Reference}
+\label{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service}\index{com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service@{com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service}}
+}
+Inheritance diagram for com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_a36ee82d2960d2af2efdc7fec93380400}{on\-Create} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_ab0251d8f57767319ab32321dfe20f070}{on\-Destroy} ()
+\item 
+I\-Binder \hyperlink{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_af7d407e3aceaa0f5097020bb91af87a6}{on\-Bind} (Intent intent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the robot controller for all robots that conform with the motor command spec, and thus respond to the same commands that \hyperlink{classcom_1_1cellbots_1_1local_1_1_cell_droid}{Cell\-Droid} receives from the remote controller. Thus class just forwards the commands received from the remote controller, to the robot over Bluetooth.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 34 of file Default\-Robot\-Controller\-Service.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_af7d407e3aceaa0f5097020bb91af87a6}{\index{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service@{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service}!on\-Bind@{on\-Bind}}
+\index{on\-Bind@{on\-Bind}!com::cellbots::local::robotcontrollerservice::DefaultRobotControllerService@{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service}}
+\subsubsection[{on\-Bind}]{\setlength{\rightskip}{0pt plus 5cm}I\-Binder {\bf com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service.\-on\-Bind} (
+\begin{DoxyParamCaption}
+\item[{Intent}]{intent}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_af7d407e3aceaa0f5097020bb91af87a6}
+
+
+Reimplemented from \hyperlink{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_abstract_robot_controller_service_aa717aea364f2427147d99ce9e0dcd56a}{com.\-cellbots.\-local.\-robotcontrollerservice.\-Abstract\-Robot\-Controller\-Service}.
+
+
+
+Definition at line 58 of file Default\-Robot\-Controller\-Service.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_a36ee82d2960d2af2efdc7fec93380400}{\index{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service@{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::local::robotcontrollerservice::DefaultRobotControllerService@{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service.\-on\-Create} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_a36ee82d2960d2af2efdc7fec93380400}
+Called when the activity is first created. 
+
+Definition at line 43 of file Default\-Robot\-Controller\-Service.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_ab0251d8f57767319ab32321dfe20f070}{\index{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service@{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service}!on\-Destroy@{on\-Destroy}}
+\index{on\-Destroy@{on\-Destroy}!com::cellbots::local::robotcontrollerservice::DefaultRobotControllerService@{com\-::cellbots\-::local\-::robotcontrollerservice\-::\-Default\-Robot\-Controller\-Service}}
+\subsubsection[{on\-Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-local.\-robotcontrollerservice.\-Default\-Robot\-Controller\-Service.\-on\-Destroy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1local_1_1robotcontrollerservice_1_1_default_robot_controller_service_ab0251d8f57767319ab32321dfe20f070}
+
+
+Definition at line 48 of file Default\-Robot\-Controller\-Service.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/local/robotcontrollerservice/\hyperlink{_default_robot_controller_service_8java}{Default\-Robot\-Controller\-Service.\-java}\end{DoxyCompactItemize}

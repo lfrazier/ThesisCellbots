@@ -1,0 +1,219 @@
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder}{\section{de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder Class Reference}
+\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder}\index{de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder@{de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder}}
+}
+
+
+Inherits Sensor\-Event\-Listener.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{enumde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_1_1_record_mode}{Record\-Mode}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a991281020464a3b55e41e5950d9e07bc}{Gesture\-Recorder} (Context context)
+\item 
+\hyperlink{enumde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_1_1_record_mode}{Record\-Mode} \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a62604901f3d2a3a2c43a20542de695b7}{get\-Record\-Mode} ()
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a187e60d00d3a879796053346f246e041}{set\-Threshold} (float threshold)
+\item 
+boolean \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a7c47374f8ea2cb207f0fe5638b3de05c}{is\-Running} ()
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a752e1a626a43f9ae0049f58c71b81d01}{on\-Accuracy\-Changed} (Sensor arg0, int arg1)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_af9e27bf86f1373ea04c3d3a0e2b3758c}{on\-Push\-To\-Gesture} (boolean pushed)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_aed7edfa4c1cf6e672ca1a003c725cf20}{on\-Sensor\-Changed} (Sensor\-Event sensor\-Event)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a8ef9b8dcdee226c619dfaddf6a286b19}{register\-Listener} (\hyperlink{interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_listener}{Gesture\-Recorder\-Listener} listener)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a344cf951361617a46c4664e25003b7ae}{set\-Record\-Mode} (\hyperlink{enumde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_1_1_record_mode}{Record\-Mode} record\-Mode)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a605971da6e88378642988821583d23b9}{start} ()
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_ad8d68e5c8f259eaab3146bcba75ca1f9}{stop} ()
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a9f13d73493b4aac7373108bff7b2a4e3}{unregister\-Listener} (\hyperlink{interfacede_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_listener}{Gesture\-Recorder\-Listener} listener)
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a7dbd7a103f70dceb0514c572c64a91f0}{pause} (boolean b)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_adc380cba52863ede912a2291895002c0}{finalize} ()  throws Throwable 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file Gesture\-Recorder.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a991281020464a3b55e41e5950d9e07bc}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!Gesture\-Recorder@{Gesture\-Recorder}}
+\index{Gesture\-Recorder@{Gesture\-Recorder}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{Gesture\-Recorder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-Gesture\-Recorder} (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a991281020464a3b55e41e5950d9e07bc}
+
+
+Definition at line 50 of file Gesture\-Recorder.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_adc380cba52863ede912a2291895002c0}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!finalize@{finalize}}
+\index{finalize@{finalize}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{finalize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-finalize} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Throwable \hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_adc380cba52863ede912a2291895002c0}
+
+
+Definition at line 61 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a62604901f3d2a3a2c43a20542de695b7}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!get\-Record\-Mode@{get\-Record\-Mode}}
+\index{get\-Record\-Mode@{get\-Record\-Mode}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{get\-Record\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Record\-Mode} {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-get\-Record\-Mode} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a62604901f3d2a3a2c43a20542de695b7}
+
+
+Definition at line 66 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a7c47374f8ea2cb207f0fe5638b3de05c}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!is\-Running@{is\-Running}}
+\index{is\-Running@{is\-Running}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{is\-Running}]{\setlength{\rightskip}{0pt plus 5cm}boolean de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-is\-Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a7c47374f8ea2cb207f0fe5638b3de05c}
+
+
+Definition at line 75 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a752e1a626a43f9ae0049f58c71b81d01}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!on\-Accuracy\-Changed@{on\-Accuracy\-Changed}}
+\index{on\-Accuracy\-Changed@{on\-Accuracy\-Changed}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{on\-Accuracy\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-on\-Accuracy\-Changed} (
+\begin{DoxyParamCaption}
+\item[{Sensor}]{arg0, }
+\item[{int}]{arg1}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a752e1a626a43f9ae0049f58c71b81d01}
+
+
+Definition at line 80 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_af9e27bf86f1373ea04c3d3a0e2b3758c}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!on\-Push\-To\-Gesture@{on\-Push\-To\-Gesture}}
+\index{on\-Push\-To\-Gesture@{on\-Push\-To\-Gesture}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{on\-Push\-To\-Gesture}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-on\-Push\-To\-Gesture} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{pushed}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_af9e27bf86f1373ea04c3d3a0e2b3758c}
+
+
+Definition at line 84 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_aed7edfa4c1cf6e672ca1a003c725cf20}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!on\-Sensor\-Changed@{on\-Sensor\-Changed}}
+\index{on\-Sensor\-Changed@{on\-Sensor\-Changed}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{on\-Sensor\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-on\-Sensor\-Changed} (
+\begin{DoxyParamCaption}
+\item[{Sensor\-Event}]{sensor\-Event}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_aed7edfa4c1cf6e672ca1a003c725cf20}
+
+
+Definition at line 100 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a7dbd7a103f70dceb0514c572c64a91f0}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!pause@{pause}}
+\index{pause@{pause}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-pause} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{b}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a7dbd7a103f70dceb0514c572c64a91f0}
+
+
+Definition at line 164 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a8ef9b8dcdee226c619dfaddf6a286b19}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!register\-Listener@{register\-Listener}}
+\index{register\-Listener@{register\-Listener}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{register\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-register\-Listener} (
+\begin{DoxyParamCaption}
+\item[{{\bf Gesture\-Recorder\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a8ef9b8dcdee226c619dfaddf6a286b19}
+
+
+Definition at line 139 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a344cf951361617a46c4664e25003b7ae}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!set\-Record\-Mode@{set\-Record\-Mode}}
+\index{set\-Record\-Mode@{set\-Record\-Mode}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{set\-Record\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-set\-Record\-Mode} (
+\begin{DoxyParamCaption}
+\item[{{\bf Record\-Mode}}]{record\-Mode}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a344cf951361617a46c4664e25003b7ae}
+
+
+Definition at line 144 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a187e60d00d3a879796053346f246e041}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!set\-Threshold@{set\-Threshold}}
+\index{set\-Threshold@{set\-Threshold}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{set\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-set\-Threshold} (
+\begin{DoxyParamCaption}
+\item[{float}]{threshold}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a187e60d00d3a879796053346f246e041}
+
+
+Definition at line 70 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a605971da6e88378642988821583d23b9}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!start@{start}}
+\index{start@{start}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a605971da6e88378642988821583d23b9}
+
+
+Definition at line 148 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_ad8d68e5c8f259eaab3146bcba75ca1f9}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!stop@{stop}}
+\index{stop@{stop}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_ad8d68e5c8f259eaab3146bcba75ca1f9}
+
+
+Definition at line 154 of file Gesture\-Recorder.\-java.
+
+\hypertarget{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a9f13d73493b4aac7373108bff7b2a4e3}{\index{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}!unregister\-Listener@{unregister\-Listener}}
+\index{unregister\-Listener@{unregister\-Listener}!de::dfki::ccaal::gestures::recorder::GestureRecorder@{de\-::dfki\-::ccaal\-::gestures\-::recorder\-::\-Gesture\-Recorder}}
+\subsubsection[{unregister\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf de.\-dfki.\-ccaal.\-gestures.\-recorder.\-Gesture\-Recorder.\-unregister\-Listener} (
+\begin{DoxyParamCaption}
+\item[{{\bf Gesture\-Recorder\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1dfki_1_1ccaal_1_1gestures_1_1recorder_1_1_gesture_recorder_a9f13d73493b4aac7373108bff7b2a4e3}
+
+
+Definition at line 159 of file Gesture\-Recorder.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/de/dfki/ccaal/gestures/recorder/\hyperlink{_gesture_recorder_8java}{Gesture\-Recorder.\-java}\end{DoxyCompactItemize}

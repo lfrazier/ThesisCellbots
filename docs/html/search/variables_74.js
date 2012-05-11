@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['tag',['TAG',['../classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_direct_control_activity.html#a6992276f903a32207161d88ddb246ee5',1,'com.cellbots.directcontrol.CellbotDirectControlActivity.TAG()'],['../classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity.html#a9a154d9f141a9bd2ca204303c22a9dd0',1,'com.cellbots.directcontrol.CellbotPetActivity.TAG()'],['../classcom_1_1cellbots_1_1eyes_1_1_eyes_activity.html#aa7c42c706a15ffa9dbe0dfa96c199e83',1,'com.cellbots.eyes.EyesActivity.TAG()'],['../classcom_1_1cellbots_1_1local_1_1_eyes_view.html#ae8564614b3a622836ca68f64cf33108c',1,'com.cellbots.local.EyesView.TAG()'],['../classcom_1_1cellbots_1_1remote_1_1_cellbot_r_c_activity.html#a4f41df11fc7e72266c02d4eab0eba2dd',1,'com.cellbots.remote.CellbotRCActivity.TAG()']]],
+  ['trainingset',['trainingSet',['../classde_1_1dfki_1_1ccaal_1_1gestures_1_1classifier_1_1_gesture_classifier.html#a7d526d1e046e33325660aeed7469322e',1,'de::dfki::ccaal::gestures::classifier::GestureClassifier']]]
+];

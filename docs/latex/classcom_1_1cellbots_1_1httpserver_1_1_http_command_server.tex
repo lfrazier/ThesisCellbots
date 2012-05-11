@@ -1,0 +1,153 @@
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server}{\section{com.\-cellbots.\-httpserver.\-Http\-Command\-Server Class Reference}
+\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server}\index{com.\-cellbots.\-httpserver.\-Http\-Command\-Server@{com.\-cellbots.\-httpserver.\-Http\-Command\-Server}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interfacecom_1_1cellbots_1_1httpserver_1_1_http_command_server_1_1_http_command_server_listener}{Http\-Command\-Server\-Listener}
+\item 
+class {\bfseries Request\-Listener\-Thread}
+\item 
+class {\bfseries Response\-Resource$<$ T $>$}
+\item 
+class {\bfseries Url\-Params}
+\item 
+class {\bfseries Worker\-Thread}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_af6ff32ff0ae04008b28b8164109fed10}{Http\-Command\-Server} (String root, int port, \hyperlink{interfacecom_1_1cellbots_1_1httpserver_1_1_http_command_server_1_1_http_command_server_listener}{Http\-Command\-Server\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a7c06210fd4e74e9820a86d80ba5034b2}{set\-Root} (String root)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a019f90136a63a63ee7b85be84c6ad2a8}{add\-Response\-By\-Name} (String name, byte\mbox{[}$\,$\mbox{]} data, String content\-Type)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a32f6851c312b3f8d4746f84cbae32adb}{add\-Response\-By\-Name} (String name, String path, String content\-Type)
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_ab8ccb7f93a2c889a3920496ebb544ade}{get\-Response\-By\-Name} (String name)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a7bf03172ef4fbc88a23f56d29ff74cff}{stop\-Server} ()
+\item 
+String \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a26b517cf4b436c4a4fb75e42b1ef9ece}{get\-Local\-Ip\-Address} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a2370a07c31c49c29c0e726410e480c5d}{handle} (final Http\-Server\-Connection conn, final Http\-Context context)  throws Http\-Exception, I\-O\-Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the H\-T\-T\-P server that runs locally and listens on the specified port. The server is designed slightly differently than a standard H\-T\-T\-P server -\/-\/ it is designed as a command server where each G\-E\-T/\-P\-U\-T/\-P\-O\-S\-T request is a command sent to the Android app using this server. All P\-U\-T requests are forwarded to the listener via \hyperlink{interfacecom_1_1cellbots_1_1httpserver_1_1_http_command_server_1_1_http_command_server_listener}{Http\-Command\-Server\-Listener} if one is set through the constructor of this class. H\-T\-T\-P clients can request resources from this server. The server serves out named resources that exist in the memory. If none exists, then it looks for files by that name in the specified root directory. For example\-: An H\-T\-T\-P P\-U\-T request to the U\-R\-L \href{http://}{\tt http\-://}$<$ip$>$\-:$<$port$>$/mycommand will result in a callback made to \hyperlink{interfacecom_1_1cellbots_1_1httpserver_1_1_http_command_server_1_1_http_command_server_listener_a02b6e1dc1f2144f0a56b6a174bde5f0e}{Http\-Command\-Server\-Listener.\-on\-Request()} with $|$req$|$ = \char`\"{}mycommand\char`\"{} and with the U\-R\-L parameters and request entity passed appropriately. When an H\-T\-T\-P G\-E\-T request to the U\-R\-L \href{http://}{\tt http\-://}$<$ip$>$\-:$<$port$>$/myres is made, the server first looks for the resource by name \char`\"{}myres\char`\"{} in the memory, ad returns its value in the response with the appropriate content type. If the named resource is not found in the memory, it searched for a file by name \char`\"{}myres\char`\"{} in the default root directory, and returns the contents of the file in the H\-T\-T\-P response.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 93 of file Http\-Command\-Server.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_af6ff32ff0ae04008b28b8164109fed10}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!Http\-Command\-Server@{Http\-Command\-Server}}
+\index{Http\-Command\-Server@{Http\-Command\-Server}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{Http\-Command\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-Http\-Command\-Server} (
+\begin{DoxyParamCaption}
+\item[{String}]{root, }
+\item[{int}]{port, }
+\item[{{\bf Http\-Command\-Server\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_af6ff32ff0ae04008b28b8164109fed10}
+
+
+Definition at line 152 of file Http\-Command\-Server.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a019f90136a63a63ee7b85be84c6ad2a8}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!add\-Response\-By\-Name@{add\-Response\-By\-Name}}
+\index{add\-Response\-By\-Name@{add\-Response\-By\-Name}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{add\-Response\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-add\-Response\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{data, }
+\item[{String}]{content\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a019f90136a63a63ee7b85be84c6ad2a8}
+
+
+Definition at line 175 of file Http\-Command\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a32f6851c312b3f8d4746f84cbae32adb}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!add\-Response\-By\-Name@{add\-Response\-By\-Name}}
+\index{add\-Response\-By\-Name@{add\-Response\-By\-Name}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{add\-Response\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-add\-Response\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{path, }
+\item[{String}]{content\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a32f6851c312b3f8d4746f84cbae32adb}
+
+
+Definition at line 181 of file Http\-Command\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a26b517cf4b436c4a4fb75e42b1ef9ece}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!get\-Local\-Ip\-Address@{get\-Local\-Ip\-Address}}
+\index{get\-Local\-Ip\-Address@{get\-Local\-Ip\-Address}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{get\-Local\-Ip\-Address}]{\setlength{\rightskip}{0pt plus 5cm}String {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-get\-Local\-Ip\-Address} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a26b517cf4b436c4a4fb75e42b1ef9ece}
+
+
+Definition at line 236 of file Http\-Command\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_ab8ccb7f93a2c889a3920496ebb544ade}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!get\-Response\-By\-Name@{get\-Response\-By\-Name}}
+\index{get\-Response\-By\-Name@{get\-Response\-By\-Name}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{get\-Response\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-get\-Response\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_ab8ccb7f93a2c889a3920496ebb544ade}
+
+
+Definition at line 187 of file Http\-Command\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a2370a07c31c49c29c0e726410e480c5d}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!handle@{handle}}
+\index{handle@{handle}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-handle} (
+\begin{DoxyParamCaption}
+\item[{final Http\-Server\-Connection}]{conn, }
+\item[{final Http\-Context}]{context}
+\end{DoxyParamCaption}
+)  throws Http\-Exception, I\-O\-Exception }}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a2370a07c31c49c29c0e726410e480c5d}
+
+
+Definition at line 255 of file Http\-Command\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a7c06210fd4e74e9820a86d80ba5034b2}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!set\-Root@{set\-Root}}
+\index{set\-Root@{set\-Root}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{set\-Root}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-set\-Root} (
+\begin{DoxyParamCaption}
+\item[{String}]{root}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a7c06210fd4e74e9820a86d80ba5034b2}
+
+
+Definition at line 167 of file Http\-Command\-Server.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a7bf03172ef4fbc88a23f56d29ff74cff}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}!stop\-Server@{stop\-Server}}
+\index{stop\-Server@{stop\-Server}!com::cellbots::httpserver::HttpCommandServer@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server}}
+\subsubsection[{stop\-Server}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server.\-stop\-Server} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_a7bf03172ef4fbc88a23f56d29ff74cff}
+
+
+Definition at line 191 of file Http\-Command\-Server.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/httpserver/\hyperlink{_http_command_server_8java}{Http\-Command\-Server.\-java}\end{DoxyCompactItemize}

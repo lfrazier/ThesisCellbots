@@ -1,0 +1,321 @@
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity}{\section{com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity}\index{com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity@{com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity}}
+}
+Inheritance diagram for com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_aa495c9cab7b25b9bc4ed212560003e57}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_aae26caa6558899d648deeeaeac2e83e2}{on\-Destroy} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a69d24e6f94e5bdd0bd550301b6feaf51}{surface\-Created} (Surface\-Holder holder)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ae9482d9a5c5b71018fca46571b3069be}{surface\-Destroyed} (Surface\-Holder holder)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a0362721b5720ba217305d411d5682419}{surface\-Changed} (Surface\-Holder holder, int format, int w, int h)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a590aae0cb7ac6de272a6dc159c75249d}{switch\-To\-Accelerometer\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a8bb7c255df7a54df85e3f73fa8611405}{switch\-To\-Dpad\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad77f5722b9b596d0cd91590f784a1f1d}{switch\-To\-Voice\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a7d0afd1fe3e7f19fc360d81e767e1553}{switch\-To\-Joystick\-Control} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_acb512b9a74e5b51189761c595ecf2c23}{on\-Wheel\-Velocity\-Set\-Requested} (float direction, float speed)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a71ecc6da4c0b7b764227ee051f1baffe}{on\-Stop\-Requested} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a74d38a79b194514502629984b408b5ad}{on\-Action\-Requested} (int action, String values)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad494bfd91b52b5e2ed518866d41e2e48}{on\-Switch\-Interface\-Requested} (int interface\-Id)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a6069e1633e745226d6ab1be54be03a95}{on\-Popup\-Window\-Requested} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a44cb62aa6ced32575ae892b6a4851680}{state} = 0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a9a154d9f141a9bd2ca204303c22a9dd0}{T\-A\-G} = \char`\"{}Cellbot Pet\char`\"{}
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a9e900de856474be2bc5431d0d3109222}{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E} = 42
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a6d0102e3c429683090353ca6ace13243}{P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E} = \char`\"{}http\-://personabots.\-appspot.\-com/personas/tuby/idle.\-png\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad88d2d6b9599f7b288a677b958230e3e}{P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y} = \char`\"{}http\-://personabots.\-appspot.\-com/personas/tuby/ready.\-png\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Turns your Cellbot into a pet robot that can obey basic commands and track faces. T\-O\-D\-O (clchen, css, bendavies)\-: Work out where this should go in the workflow.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clchen@google.com}{\tt clchen@google.\-com} (Charles L. Chen) 
+\end{DoxyAuthor}
+
+
+Definition at line 77 of file Cellbot\-Pet\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a74d38a79b194514502629984b408b5ad}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Action\-Requested@{on\-Action\-Requested}}
+\index{on\-Action\-Requested@{on\-Action\-Requested}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Action\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Action\-Requested} (
+\begin{DoxyParamCaption}
+\item[{int}]{action, }
+\item[{String}]{values}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a74d38a79b194514502629984b408b5ad}
+Causes the robot to take an action as defined by the A\-C\-T\-I\-O\-N\-\_\-\-X\-X\-X values above. Currently the only string value allowed is the text for the A\-C\-T\-I\-O\-N\-\_\-\-S\-P\-E\-A\-K. There are plans in the future to allow for the options to the movement commands. T\-O\-D\-O(css)\-: Change this to the public document U\-R\-L when it is available since this code is intended to be open sourced.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://docs.google.com/a/google.com/document/d/1}{\tt https\-://docs.\-google.\-com/a/google.\-com/document/d/1} Kl11k3\-Y\-O9\-Bsmo\-R\-I\-Y4\-J\-Ej\-Z\-Zo\-Z\-X0\-Bd\-Yy\-\_\-3\-A\-H\-C1\-Gy\-V\-Nu\-Q\-Q/edit\# 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em action} & An A\-C\-T\-I\-O\-N\-\_\-\-X\-X\-X value \\
+\hline
+{\em values} & Value to pass along to the action. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_af7320a4f9037c74ed1f4f912e8d2caac}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 382 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_aa495c9cab7b25b9bc4ed212560003e57}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_aa495c9cab7b25b9bc4ed212560003e57}
+Called when the activity is first created. 
+
+Definition at line 137 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_aae26caa6558899d648deeeaeac2e83e2}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Destroy@{on\-Destroy}}
+\index{on\-Destroy@{on\-Destroy}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Destroy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_aae26caa6558899d648deeeaeac2e83e2}
+
+
+Definition at line 213 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a6069e1633e745226d6ab1be54be03a95}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Popup\-Window\-Requested@{on\-Popup\-Window\-Requested}}
+\index{on\-Popup\-Window\-Requested@{on\-Popup\-Window\-Requested}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Popup\-Window\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Popup\-Window\-Requested} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a6069e1633e745226d6ab1be54be03a95}
+Request to show a popup window 
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a83e7a945fb951b90b2f58fb3807a02bb}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 451 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a71ecc6da4c0b7b764227ee051f1baffe}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Stop\-Requested@{on\-Stop\-Requested}}
+\index{on\-Stop\-Requested@{on\-Stop\-Requested}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Stop\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Stop\-Requested} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a71ecc6da4c0b7b764227ee051f1baffe}
+Causes the robot to stop moving. 
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_aa32f78f97e959fe7212b0ce4db2cd616}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 377 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad494bfd91b52b5e2ed518866d41e2e48}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Switch\-Interface\-Requested@{on\-Switch\-Interface\-Requested}}
+\index{on\-Switch\-Interface\-Requested@{on\-Switch\-Interface\-Requested}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Switch\-Interface\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Switch\-Interface\-Requested} (
+\begin{DoxyParamCaption}
+\item[{int}]{interface\-Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad494bfd91b52b5e2ed518866d41e2e48}
+Request to switch to a different interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interface\-Id} & The I\-D of the interface to switch to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a5e14db43eb3e72683b42d08bf4222741}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 428 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_acb512b9a74e5b51189761c595ecf2c23}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!on\-Wheel\-Velocity\-Set\-Requested@{on\-Wheel\-Velocity\-Set\-Requested}}
+\index{on\-Wheel\-Velocity\-Set\-Requested@{on\-Wheel\-Velocity\-Set\-Requested}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{on\-Wheel\-Velocity\-Set\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-on\-Wheel\-Velocity\-Set\-Requested} (
+\begin{DoxyParamCaption}
+\item[{float}]{direction, }
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_acb512b9a74e5b51189761c595ecf2c23}
+Send a wheel velocity command to a robot based on the requested direction and speed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & valid values are -\/180 to +180 where\-: -\/180 to 0 means left 0 to +180 means right \\
+\hline
+{\em speed} & valid values are 0-\/100 which is a percentage of the robots speed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacecom_1_1cellbots_1_1remote_1_1_ui_view_1_1_ui_event_listener_a7912ec147aa882d7c0bf6b8a229ddfd9}{com.\-cellbots.\-remote.\-Ui\-View.\-Ui\-Event\-Listener}.
+
+
+
+Definition at line 358 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a0362721b5720ba217305d411d5682419}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!surface\-Changed@{surface\-Changed}}
+\index{surface\-Changed@{surface\-Changed}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{surface\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-surface\-Changed} (
+\begin{DoxyParamCaption}
+\item[{Surface\-Holder}]{holder, }
+\item[{int}]{format, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a0362721b5720ba217305d411d5682419}
+
+
+Definition at line 241 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a69d24e6f94e5bdd0bd550301b6feaf51}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!surface\-Created@{surface\-Created}}
+\index{surface\-Created@{surface\-Created}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{surface\-Created}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-surface\-Created} (
+\begin{DoxyParamCaption}
+\item[{Surface\-Holder}]{holder}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a69d24e6f94e5bdd0bd550301b6feaf51}
+
+
+Definition at line 226 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ae9482d9a5c5b71018fca46571b3069be}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!surface\-Destroyed@{surface\-Destroyed}}
+\index{surface\-Destroyed@{surface\-Destroyed}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{surface\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-surface\-Destroyed} (
+\begin{DoxyParamCaption}
+\item[{Surface\-Holder}]{holder}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ae9482d9a5c5b71018fca46571b3069be}
+
+
+Definition at line 235 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a590aae0cb7ac6de272a6dc159c75249d}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!switch\-To\-Accelerometer\-Control@{switch\-To\-Accelerometer\-Control}}
+\index{switch\-To\-Accelerometer\-Control@{switch\-To\-Accelerometer\-Control}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{switch\-To\-Accelerometer\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-switch\-To\-Accelerometer\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a590aae0cb7ac6de272a6dc159c75249d}
+
+
+Definition at line 317 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a8bb7c255df7a54df85e3f73fa8611405}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!switch\-To\-Dpad\-Control@{switch\-To\-Dpad\-Control}}
+\index{switch\-To\-Dpad\-Control@{switch\-To\-Dpad\-Control}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{switch\-To\-Dpad\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-switch\-To\-Dpad\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a8bb7c255df7a54df85e3f73fa8611405}
+
+
+Definition at line 326 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a7d0afd1fe3e7f19fc360d81e767e1553}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!switch\-To\-Joystick\-Control@{switch\-To\-Joystick\-Control}}
+\index{switch\-To\-Joystick\-Control@{switch\-To\-Joystick\-Control}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{switch\-To\-Joystick\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-switch\-To\-Joystick\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a7d0afd1fe3e7f19fc360d81e767e1553}
+
+
+Definition at line 344 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad77f5722b9b596d0cd91590f784a1f1d}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!switch\-To\-Voice\-Control@{switch\-To\-Voice\-Control}}
+\index{switch\-To\-Voice\-Control@{switch\-To\-Voice\-Control}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{switch\-To\-Voice\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-switch\-To\-Voice\-Control} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad77f5722b9b596d0cd91590f784a1f1d}
+
+
+Definition at line 335 of file Cellbot\-Pet\-Activity.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a6d0102e3c429683090353ca6ace13243}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E@{P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E}}
+\index{P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E@{P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-P\-E\-R\-S\-O\-N\-A\-\_\-\-I\-D\-L\-E} = \char`\"{}http\-://personabots.\-appspot.\-com/personas/tuby/idle.\-png\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a6d0102e3c429683090353ca6ace13243}
+
+
+Definition at line 83 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad88d2d6b9599f7b288a677b958230e3e}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y@{P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y}}
+\index{P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y@{P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-P\-E\-R\-S\-O\-N\-A\-\_\-\-R\-E\-A\-D\-Y} = \char`\"{}http\-://personabots.\-appspot.\-com/personas/tuby/ready.\-png\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_ad88d2d6b9599f7b288a677b958230e3e}
+
+
+Definition at line 85 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a44cb62aa6ced32575ae892b6a4851680}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!state@{state}}
+\index{state@{state}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-state} = 0}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a44cb62aa6ced32575ae892b6a4851680}
+
+
+Definition at line 87 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a9a154d9f141a9bd2ca204303c22a9dd0}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!T\-A\-G@{T\-A\-G}}
+\index{T\-A\-G@{T\-A\-G}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-T\-A\-G} = \char`\"{}Cellbot Pet\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a9a154d9f141a9bd2ca204303c22a9dd0}
+
+
+Definition at line 79 of file Cellbot\-Pet\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a9e900de856474be2bc5431d0d3109222}{\index{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}!V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E@{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E}}
+\index{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E@{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E}!com::cellbots::directcontrol::CellbotPetActivity@{com\-::cellbots\-::directcontrol\-::\-Cellbot\-Pet\-Activity}}
+\subsubsection[{V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-directcontrol.\-Cellbot\-Pet\-Activity.\-V\-O\-I\-C\-E\-\_\-\-R\-E\-C\-O\-\_\-\-C\-O\-D\-E} = 42\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1directcontrol_1_1_cellbot_pet_activity_a9e900de856474be2bc5431d0d3109222}
+
+
+Definition at line 81 of file Cellbot\-Pet\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/directcontrol/\hyperlink{_cellbot_pet_activity_8java}{Cellbot\-Pet\-Activity.\-java}\end{DoxyCompactItemize}

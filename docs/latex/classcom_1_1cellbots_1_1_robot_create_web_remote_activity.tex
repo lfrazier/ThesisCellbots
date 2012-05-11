@@ -1,0 +1,76 @@
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_web_remote_activity}{\section{com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity Class Reference}
+\label{classcom_1_1cellbots_1_1_robot_create_web_remote_activity}\index{com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity@{com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity}}
+}
+Inheritance diagram for com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1_robot_create_web_remote_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_acd9708d99c328560293aae7865aa98cc}{on\-Create} (Bundle saved\-Instance\-State)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_a24e4ff4809baea1bb353570934feec1c}{robot\-Scan\-Result} (\hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry} scanned\-Entry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allow a user to edit or create a robot profile for use as a remote (over the web) access.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:css@google.com}{\tt css@google.\-com} (Charles Spirakis) 
+\end{DoxyAuthor}
+
+
+Definition at line 39 of file Robot\-Create\-Web\-Remote\-Activity.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_acd9708d99c328560293aae7865aa98cc}{\index{com\-::cellbots\-::\-Robot\-Create\-Web\-Remote\-Activity@{com\-::cellbots\-::\-Robot\-Create\-Web\-Remote\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!com::cellbots::RobotCreateWebRemoteActivity@{com\-::cellbots\-::\-Robot\-Create\-Web\-Remote\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity.\-on\-Create} (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_acd9708d99c328560293aae7865aa98cc}
+Do the basics that are required for creation classes. This includes getting the list of robots available, determining if this was an edit or create call, getting the name passed to us (if available), etc. 
+
+Reimplemented from \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a4ffb9ed3243df618b692200f44745592}{com.\-cellbots.\-Robot\-Base\-Create}.
+
+
+
+Definition at line 56 of file Robot\-Create\-Web\-Remote\-Activity.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_a24e4ff4809baea1bb353570934feec1c}{\index{com\-::cellbots\-::\-Robot\-Create\-Web\-Remote\-Activity@{com\-::cellbots\-::\-Robot\-Create\-Web\-Remote\-Activity}!robot\-Scan\-Result@{robot\-Scan\-Result}}
+\index{robot\-Scan\-Result@{robot\-Scan\-Result}!com::cellbots::RobotCreateWebRemoteActivity@{com\-::cellbots\-::\-Robot\-Create\-Web\-Remote\-Activity}}
+\subsubsection[{robot\-Scan\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-Robot\-Create\-Web\-Remote\-Activity.\-robot\-Scan\-Result} (
+\begin{DoxyParamCaption}
+\item[{{\bf Robot\-Entry}}]{scanned\-Entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classcom_1_1cellbots_1_1_robot_create_web_remote_activity_a24e4ff4809baea1bb353570934feec1c}
+After a scan has occurred, this method is called with the values that were scanned in. Should be overridden by children who want the scanned in data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scanned\-Entry} & scanned in \hyperlink{classcom_1_1cellbots_1_1_robot_entry}{Robot\-Entry}. Only the data from the scan is included. The callee should take what they need and fill in defaults for missing values that are needed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classcom_1_1cellbots_1_1_robot_base_create_a517846f7c3a7df6adeadbd5db50ce7cd}{com.\-cellbots.\-Robot\-Base\-Create}.
+
+
+
+Definition at line 240 of file Robot\-Create\-Web\-Remote\-Activity.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/\hyperlink{_robot_create_web_remote_activity_8java}{Robot\-Create\-Web\-Remote\-Activity.\-java}\end{DoxyCompactItemize}

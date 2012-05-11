@@ -1,0 +1,193 @@
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager}{\section{com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager Class Reference}
+\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager}\index{com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager@{com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interfacecom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_1_1_http_request_listener}{Http\-Request\-Listener}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a7b99c811f6b2e448edbd1327730fdd02}{Http\-Command\-Server\-Service\-Manager} (Context ct, \hyperlink{interfacecom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_1_1_http_request_listener}{Http\-Request\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a6cde9e9028d5b45b6e17373d81b18ad6}{disconnect} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a57104289b515803897f27a5a854026ba}{set\-Response\-By\-Name} (String name, byte\mbox{[}$\,$\mbox{]} data, String content\-Type)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a34a7dbb3149608cfad622c03af9e82a0}{set\-Response\-By\-Name} (String name, String resource, String content\-Type)
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_ad025b83c5f800fa524d37602934bb74c}{get\-Response\-By\-Name} (String name)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a7c90fdbdcb2e4129d1a86f3e59174a7e}{set\-Root\-Dir} (String root)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a8f29ffc9b5c6a964838b70ba74bcaad2}{copy\-Local\-Server\-Files} (Context ct)
+\item 
+static String \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_ac39f0fbae9cac14e86bd877277c49702}{get\-Local\-Ip\-Address} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a3a652cb537b216c0017809da08947eaf}{E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E} = \char`\"{}\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a83a6e0d5243779bce31bb6b1b74c6356}{R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R} = \char`\"{}cellbots/files\char`\"{}
+\item 
+static final int \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a8c9c780120e49febbb7090e4e967a23a}{P\-O\-R\-T} = 8080
+\item 
+static final String \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a99a75b81829498e33b59d6be766acdbb}{L\-O\-C\-A\-L\-\_\-\-I\-P} = \char`\"{}127.\-0.\-0.\-1\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides an easy-\/to-\/use wrapper for the \hyperlink{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service}{Http\-Command\-Server\-Service}.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 44 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a7b99c811f6b2e448edbd1327730fdd02}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!Http\-Command\-Server\-Service\-Manager@{Http\-Command\-Server\-Service\-Manager}}
+\index{Http\-Command\-Server\-Service\-Manager@{Http\-Command\-Server\-Service\-Manager}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{Http\-Command\-Server\-Service\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-Http\-Command\-Server\-Service\-Manager} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ct, }
+\item[{{\bf Http\-Request\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a7b99c811f6b2e448edbd1327730fdd02}
+
+
+Definition at line 162 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a8f29ffc9b5c6a964838b70ba74bcaad2}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!copy\-Local\-Server\-Files@{copy\-Local\-Server\-Files}}
+\index{copy\-Local\-Server\-Files@{copy\-Local\-Server\-Files}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{copy\-Local\-Server\-Files}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-copy\-Local\-Server\-Files} (
+\begin{DoxyParamCaption}
+\item[{Context}]{ct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a8f29ffc9b5c6a964838b70ba74bcaad2}
+
+
+Definition at line 100 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a6cde9e9028d5b45b6e17373d81b18ad6}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-disconnect} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a6cde9e9028d5b45b6e17373d81b18ad6}
+
+
+Definition at line 175 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_ac39f0fbae9cac14e86bd877277c49702}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!get\-Local\-Ip\-Address@{get\-Local\-Ip\-Address}}
+\index{get\-Local\-Ip\-Address@{get\-Local\-Ip\-Address}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{get\-Local\-Ip\-Address}]{\setlength{\rightskip}{0pt plus 5cm}static String {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-get\-Local\-Ip\-Address} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_ac39f0fbae9cac14e86bd877277c49702}
+Returns the I\-P address of this device.
+
+\begin{DoxyReturn}{Returns}
+I\-P address as a String 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_ad025b83c5f800fa524d37602934bb74c}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!get\-Response\-By\-Name@{get\-Response\-By\-Name}}
+\index{get\-Response\-By\-Name@{get\-Response\-By\-Name}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{get\-Response\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-get\-Response\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_ad025b83c5f800fa524d37602934bb74c}
+
+
+Definition at line 221 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a57104289b515803897f27a5a854026ba}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!set\-Response\-By\-Name@{set\-Response\-By\-Name}}
+\index{set\-Response\-By\-Name@{set\-Response\-By\-Name}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{set\-Response\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-set\-Response\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{data, }
+\item[{String}]{content\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a57104289b515803897f27a5a854026ba}
+
+
+Definition at line 198 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a34a7dbb3149608cfad622c03af9e82a0}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!set\-Response\-By\-Name@{set\-Response\-By\-Name}}
+\index{set\-Response\-By\-Name@{set\-Response\-By\-Name}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{set\-Response\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-set\-Response\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{resource, }
+\item[{String}]{content\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a34a7dbb3149608cfad622c03af9e82a0}
+
+
+Definition at line 209 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a7c90fdbdcb2e4129d1a86f3e59174a7e}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!set\-Root\-Dir@{set\-Root\-Dir}}
+\index{set\-Root\-Dir@{set\-Root\-Dir}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{set\-Root\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-set\-Root\-Dir} (
+\begin{DoxyParamCaption}
+\item[{String}]{root}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a7c90fdbdcb2e4129d1a86f3e59174a7e}
+
+
+Definition at line 232 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a3a652cb537b216c0017809da08947eaf}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E@{E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E}}
+\index{E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E@{E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E} = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a3a652cb537b216c0017809da08947eaf}
+
+
+Definition at line 46 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a99a75b81829498e33b59d6be766acdbb}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!L\-O\-C\-A\-L\-\_\-\-I\-P@{L\-O\-C\-A\-L\-\_\-\-I\-P}}
+\index{L\-O\-C\-A\-L\-\_\-\-I\-P@{L\-O\-C\-A\-L\-\_\-\-I\-P}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{L\-O\-C\-A\-L\-\_\-\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-L\-O\-C\-A\-L\-\_\-\-I\-P} = \char`\"{}127.\-0.\-0.\-1\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a99a75b81829498e33b59d6be766acdbb}
+
+
+Definition at line 53 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a8c9c780120e49febbb7090e4e967a23a}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!P\-O\-R\-T@{P\-O\-R\-T}}
+\index{P\-O\-R\-T@{P\-O\-R\-T}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-P\-O\-R\-T} = 8080\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a8c9c780120e49febbb7090e4e967a23a}
+
+
+Definition at line 51 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a83a6e0d5243779bce31bb6b1b74c6356}{\index{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}!R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R@{R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R}}
+\index{R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R@{R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R}!com::cellbots::httpserver::HttpCommandServerServiceManager@{com\-::cellbots\-::httpserver\-::\-Http\-Command\-Server\-Service\-Manager}}
+\subsubsection[{R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf com.\-cellbots.\-httpserver.\-Http\-Command\-Server\-Service\-Manager.\-R\-E\-L\-\_\-\-R\-O\-O\-T\-\_\-\-D\-I\-R} = \char`\"{}cellbots/files\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcom_1_1cellbots_1_1httpserver_1_1_http_command_server_service_manager_a83a6e0d5243779bce31bb6b1b74c6356}
+
+
+Definition at line 49 of file Http\-Command\-Server\-Service\-Manager.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/httpserver/\hyperlink{_http_command_server_service_manager_8java}{Http\-Command\-Server\-Service\-Manager.\-java}\end{DoxyCompactItemize}

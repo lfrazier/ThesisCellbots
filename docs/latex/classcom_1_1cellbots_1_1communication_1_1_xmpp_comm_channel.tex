@@ -1,0 +1,202 @@
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel}{\section{com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel Class Reference}
+\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel}\index{com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel@{com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel}}
+}
+Inheritance diagram for com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a8288919f54e546a272ba78612f6a6959}{Xmpp\-Comm\-Channel} (String username, String password, String target\-Username, \hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}{Comm\-Message\-Listener} listener, String name)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_ad250779dd466c0a5b3a594dcd1aa0775}{connect} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a6efdff8853f69895c8e11dbea95d2db4}{disconnect} ()
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a9af3bc4e9336edb4cd78a1197c271968}{send\-Message} (String message, String type)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a075c71117a2e2d647a695fee2d2b73a5}{send\-Message} (byte\mbox{[}$\,$\mbox{]} message, String type)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a240c6ddd444d89f51b0d4756826e20e6}{set\-Message\-Listener} (\hyperlink{interfacecom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_1_1_comm_message_listener}{Comm\-Message\-Listener} listener)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a0c121157e7eb1113e2d9a1ce26f9974b}{set\-Message\-Target} (String target)
+\item 
+void \hyperlink{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a0e13be6453d99e853ef3f6081462522a}{listen\-For\-Messages} (final long wait\-Time\-Between\-Polling, boolean return\-Stream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements communication via X\-M\-P\-P. Current limits to G\-Talk accounts.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:chaitanyag@google.com}{\tt chaitanyag@google.\-com} (Chaitanya Gharpure) 
+\end{DoxyAuthor}
+
+
+Definition at line 35 of file Xmpp\-Comm\-Channel.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a8288919f54e546a272ba78612f6a6959}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!Xmpp\-Comm\-Channel@{Xmpp\-Comm\-Channel}}
+\index{Xmpp\-Comm\-Channel@{Xmpp\-Comm\-Channel}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{Xmpp\-Comm\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-Xmpp\-Comm\-Channel} (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{password, }
+\item[{String}]{target\-Username, }
+\item[{{\bf Comm\-Message\-Listener}}]{listener, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a8288919f54e546a272ba78612f6a6959}
+
+
+Definition at line 50 of file Xmpp\-Comm\-Channel.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_ad250779dd466c0a5b3a594dcd1aa0775}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!connect@{connect}}
+\index{connect@{connect}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-connect} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_ad250779dd466c0a5b3a594dcd1aa0775}
+Initializes and connects this channel so that it is ready to send and receive message. 
+
+Implements \hyperlink{classcom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_a0399b82cc9b23187ac3bb76b9e243cbc}{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel}.
+
+
+
+Definition at line 63 of file Xmpp\-Comm\-Channel.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a6efdff8853f69895c8e11dbea95d2db4}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-disconnect} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a6efdff8853f69895c8e11dbea95d2db4}
+Disconnects and tears down this channel. Call this method in your app's on\-Destroy() or while exiting the app. 
+
+Implements \hyperlink{classcom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_a0e03426e4f1911a45c8884164e681812}{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel}.
+
+
+
+Definition at line 95 of file Xmpp\-Comm\-Channel.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a0e13be6453d99e853ef3f6081462522a}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!listen\-For\-Messages@{listen\-For\-Messages}}
+\index{listen\-For\-Messages@{listen\-For\-Messages}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{listen\-For\-Messages}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-listen\-For\-Messages} (
+\begin{DoxyParamCaption}
+\item[{final long}]{wait\-Time\-Between\-Polling, }
+\item[{boolean}]{return\-Stream}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a0e13be6453d99e853ef3f6081462522a}
+
+
+Definition at line 137 of file Xmpp\-Comm\-Channel.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a9af3bc4e9336edb4cd78a1197c271968}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!send\-Message@{send\-Message}}
+\index{send\-Message@{send\-Message}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{send\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-send\-Message} (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{String}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a9af3bc4e9336edb4cd78a1197c271968}
+Sends the specified message string over this channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_a7254de3c070de4757a72fb35f352073d}{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel}.
+
+
+
+Definition at line 104 of file Xmpp\-Comm\-Channel.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a075c71117a2e2d647a695fee2d2b73a5}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!send\-Message@{send\-Message}}
+\index{send\-Message@{send\-Message}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{send\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-send\-Message} (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{message, }
+\item[{String}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a075c71117a2e2d647a695fee2d2b73a5}
+Sends the specified message byte array over this channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_ac6eab4aba4a03b187eeadbdde7fc1e96}{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel}.
+
+
+
+Definition at line 109 of file Xmpp\-Comm\-Channel.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a240c6ddd444d89f51b0d4756826e20e6}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!set\-Message\-Listener@{set\-Message\-Listener}}
+\index{set\-Message\-Listener@{set\-Message\-Listener}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{set\-Message\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-set\-Message\-Listener} (
+\begin{DoxyParamCaption}
+\item[{{\bf Comm\-Message\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a240c6ddd444d89f51b0d4756826e20e6}
+Sets the listener for getting callbacks when messages are received on this channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The message listener. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_a57f9ddf86cc85b426edee6529a50571d}{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel}.
+
+
+
+Definition at line 127 of file Xmpp\-Comm\-Channel.\-java.
+
+\hypertarget{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a0c121157e7eb1113e2d9a1ce26f9974b}{\index{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}!set\-Message\-Target@{set\-Message\-Target}}
+\index{set\-Message\-Target@{set\-Message\-Target}!com::cellbots::communication::XmppCommChannel@{com\-::cellbots\-::communication\-::\-Xmpp\-Comm\-Channel}}
+\subsubsection[{set\-Message\-Target}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf com.\-cellbots.\-communication.\-Xmpp\-Comm\-Channel.\-set\-Message\-Target} (
+\begin{DoxyParamCaption}
+\item[{String}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classcom_1_1cellbots_1_1communication_1_1_xmpp_comm_channel_a0c121157e7eb1113e2d9a1ce26f9974b}
+Sets the target to send messages to. See implementations specific documentation to know what the target means in that context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcom_1_1cellbots_1_1communication_1_1_abstract_comm_channel_a8a067cf00a2435c21ea5989af0d94905}{com.\-cellbots.\-communication.\-Abstract\-Comm\-Channel}.
+
+
+
+Definition at line 132 of file Xmpp\-Comm\-Channel.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/com/cellbots/communication/\hyperlink{_xmpp_comm_channel_8java}{Xmpp\-Comm\-Channel.\-java}\end{DoxyCompactItemize}
