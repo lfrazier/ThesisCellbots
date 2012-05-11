@@ -7,66 +7,54 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <TextView
-            android:id="@+id/thresholdLabel"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="Threshold" />
+            android:layout_alignParentRight="true"
+            android:baselineAligned="true" >
 
-        <EditText
-            android:id="@+id/thresholdTextField"
-            android:layout_width="184dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/thresholdLabel"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="0.51"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:singleLine="true"
-            android:text="20" >
-
-            <requestFocus />
-        </EditText>
+            <Button
+                android:id="@+id/estop"
+                android:layout_width="234dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="STOP" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/trainingLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/thresholdTextField"
-            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="16dp"
             android:text="Train Gesture" />
 
-        <LinearLayout
-            android:layout_width="317dp"
+        <EditText
+            android:id="@+id/gestureTrainTextField"
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/trainingLabel"
-            android:baselineAligned="true" >
+            android:layout_alignBaseline="@+id/trainingLabel"
+            android:layout_alignBottom="@+id/trainingLabel"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:singleLine="true" >
 
-            <View
-                android:id="@+id/view1"
-                android:layout_width="72dp"
-                android:layout_height="34dp"
-                android:layout_gravity="bottom" />
+            <requestFocus />
+        </EditText>
 
-            <EditText
-                android:id="@+id/gestureTrainTextField"
-                android:layout_width="118dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="19dp"
-                android:ems="10"
-                android:singleLine="true" />
-
-            <Button
-                android:id="@+id/trainButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:text="TRAIN" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/trainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gestureTrainTextField"
+            android:layout_alignBottom="@+id/gestureTrainTextField"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/gestureTrainTextField"
+            android:text="TRAIN" />
 
     </RelativeLayout>
 

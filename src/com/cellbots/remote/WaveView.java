@@ -10,6 +10,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.view.KeyEvent;
@@ -35,8 +37,8 @@ public class WaveView extends UiView {
 	private Activity activity;
 	
 	IGestureRecognitionService recognitionService;
-	String activeTrainingSet = "default";
-	double recognitionThreshold;
+	String activeTrainingSet = "thesis3";
+	double recognitionThreshold = 15;
 	
 
 	final IBinder gestureListenerStub = new IGestureRecognitionListener.Stub() {
@@ -167,10 +169,18 @@ public class WaveView extends UiView {
 		LinearLayout linearLayout = (LinearLayout) findViewById(R.id.directionalController_container);
 		linearLayout.addView(waveControls);
 		
-		final EditText thresholdTextField = (EditText) findViewById(R.id.thresholdTextField);
-		recognitionThreshold = Double.parseDouble(thresholdTextField.getText().toString());
+//		final EditText thresholdTextField = (EditText) findViewById(R.id.thresholdTextField);
+//		recognitionThreshold = Double.parseDouble(thresholdTextField.getText().toString());
 	
 		final EditText gestureTextField = (EditText) findViewById(R.id.gestureTrainTextField);
+		
+		final Button estop = (Button) findViewById(R.id.estop);
+		estop.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.MULTIPLY);
+		estop.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				uiEventListener.onStopRequested();
+			}
+		});
 		
 		final Button startTrainButton = (Button) findViewById(R.id.trainButton);
 		startTrainButton.setOnClickListener(new OnClickListener() {
@@ -194,16 +204,16 @@ public class WaveView extends UiView {
 			}
 		});
 
-		thresholdTextField.setOnKeyListener(new OnKeyListener() {
-			public boolean onKey(View v, int keyCode, KeyEvent event) {
-				if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
-					recognitionThreshold = Double.parseDouble(thresholdTextField.getText().toString()); 
-					Toast.makeText(WaveView.mContext, String.format("%s: %2f", "Threshold", recognitionThreshold), Toast.LENGTH_LONG).show();
-					return true;
-				}
-				return false;
-			}
-		});
+//		thresholdTextField.setOnKeyListener(new OnKeyListener() {
+//			public boolean onKey(View v, int keyCode, KeyEvent event) {
+//				if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+//					recognitionThreshold = Double.parseDouble(thresholdTextField.getText().toString()); 
+//					Toast.makeText(WaveView.mContext, String.format("%s: %2f", "Threshold", recognitionThreshold), Toast.LENGTH_LONG).show();
+//					return true;
+//				}
+//				return false;
+//			}
+//		});
 		
 		Intent bindIntent = new Intent("de.dfki.ccaal.gestures.GESTURE_RECOGNIZER");
 		mContext.bindService(bindIntent, serviceConnection, Context.BIND_AUTO_CREATE);
@@ -215,6 +225,7 @@ public class WaveView extends UiView {
 		nextControl.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
+				mContext.unbindService(serviceConnection);
 				uiEventListener
 						.onSwitchInterfaceRequested(UiEventListener.INTERFACE_DPAD);
 			}
@@ -225,6 +236,7 @@ public class WaveView extends UiView {
 		previousControl.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
+				mContext.unbindService(serviceConnection);
 				uiEventListener
 						.onSwitchInterfaceRequested(UiEventListener.INTERFACE_ACCELEROMETER);
 			}
